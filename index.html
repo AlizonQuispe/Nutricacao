@@ -11,7 +11,7 @@ html,body{height:100%}
 body{margin:0;background:var(--choco);color:var(--body);font-family:var(--ff-b);overflow:hidden;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 #vp{position:relative;width:100%;height:100%;overflow:hidden}
 #stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0;background:var(--cream);overflow:hidden}
-.s{position:absolute;inset:0;padding:150px 120px 120px;opacity:0;visibility:hidden;transition:opacity .55s ease,visibility 0s .55s;background:var(--cream);overflow:hidden}
+.s{position:absolute;inset:0;padding:128px 120px 120px;opacity:0;visibility:hidden;transition:opacity .55s ease,visibility 0s .55s;background:var(--cream);overflow:hidden}
 .s.act{opacity:1;visibility:visible;transition:opacity .55s ease}
 .s.dark{background:var(--choco);color:#EAD7BF}
 h1,h2,h3{font-family:var(--ff-h);color:var(--ink);margin:0;font-weight:900;text-wrap:balance}
@@ -109,7 +109,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 
 <div id="prog"></div>
 <div id="vp"><div id="stage">
--- SLIDE 1--
+
 <section class="s act" id="s1" data-sec="Portada" data-note="Alizon (0:00). Saludo breve, nombre del proyecto y del equipo. Frase central: NutriCacao es la crema untable de cacao y maní con cushuro, sin octógonos y con hierro y proteína, que los niños aceptan por su sabor. Pasar directo al problema, sin leer la lámina." data-next="Empezar">
 <div class="blob" style="width:760px;height:760px;right:-120px;top:-160px;background:var(--orange);opacity:.2"></div>
 <div class="blob" style="width:420px;height:420px;left:-120px;bottom:-140px;background:var(--lime);opacity:.22"></div>
@@ -121,37 +121,34 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <div class="row rv" style="--i:3;gap:16px;flex-wrap:wrap"><span class="pill p-or">Sin octógonos</span><span class="pill p-gr">Con hierro y proteína</span></div>
 <p class="rv" style="--i:4;font-size:24px;color:var(--muted);margin-top:30px"><br>Asesor: Gustavo Enrique Kanashiro Uechi</p>
 </div>
-<img class="rv z float" style="--i:2;position:absolute;right:40px;top:36px;height:1010px;width:auto;filter:drop-shadow(0 30px 40px rgba(58,28,16,.25))" data-img="cover" alt="Frasco de NutriCacao rodeado de chocolate">
+<img class="rv z float" style="--i:2;position:absolute;right:-30px;top:-50px;height:1180px;width:auto;filter:drop-shadow(0 30px 40px rgba(58,28,16,.25))" data-img="cover" alt="Frasco de NutriCacao rodeado de chocolate">
 <img class="rv z pop" style="--i:5;position:absolute;left:1010px;top:700px;width:220px;height:220px;object-fit:cover;border-radius:50%;border:10px solid var(--cream);box-shadow:0 16px 40px rgba(58,28,16,.3);animation-delay:1.2s" data-img="mascot" alt="Mascota cacao">
 <button class="next" data-go="1">Empezar <i>→</i></button>
 </section>
---SLIDE 2--
-<section class="s" id="s17" data-sec="Equipo" data-note="Alizon. Presentar al equipo: cuatro socias de Administración de la Universidad del Pacífico y el asesor Gustavo Enrique Kanashiro Uechi. Decir en una frase qué área lideró cada integrante antes de pasar al video." data-next="Mira el video">
+
+<section class="s" id="s17" data-sec="Nuestro equipo" data-note="Alizon. Presentar al equipo: cuatro socias de Administración de la Universidad del Pacífico y el asesor Gustavo Enrique Kanashiro Uechi. Decir en una frase qué área lideró cada integrante antes de pasar al video." data-next="Mira el video">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Nuestro equipo</p>
-<h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Distintas participantes, un mismo producto</h2>
+<h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Cuatro socias, un mismo producto</h2>
 <div class="row" style="margin-top:34px;gap:40px;justify-content:center">
-<div class="tcard rv" style="--i:2"><div class="ph"><img data-img="m1" alt="Miembro 1"></div><p class="nm">Alizon Quispe</p></div>
-<div class="tcard rv" style="--i:3"><div class="ph"><img data-img="m2" alt="Miembro 2"></div><p class="nm">Nayeli de la Cruz</p></div>
-<div class="tcard rv" style="--i:4"><div class="ph"><img data-img="m3" alt="Miembro 3"></div><p class="nm">Valery Muchari</p></div>
+<div class="tcard rv" style="--i:2"><div class="ph"><img data-img="m1" alt="Miembro 1"></div><p class="nm">Miembro 1</p></div>
+<div class="tcard rv" style="--i:3"><div class="ph"><img data-img="m2" alt="Miembro 2"></div><p class="nm">Miembro 2</p></div>
+<div class="tcard rv" style="--i:4"><div class="ph"><img data-img="m3" alt="Miembro 3"></div><p class="nm">Miembro 3</p></div>
 <div class="tcard rv" style="--i:5"><div class="ph" style="background:var(--sand);display:grid;place-items:center"><img data-img="mascot" alt="Mascota de NutriCacao" style="width:70%;height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;opacity:.9"></div><p class="nm">Miembro 4</p></div>
 </div>
 <p class="src">Universidad del Pacífico · Administración · Asesor: Gustavo Enrique Kanashiro Uechi</p>
 <button class="next" data-go="1">Mira el video <i>→</i></button>
 </section>
---SLIDE 3---
+
 <section class="s dark" id="s18" data-sec="Video" data-note="Alizon. Dar play al video (dura unos 15 segundos, empieza solo al entrar). Es el storytelling del problema: al terminar, decir la frase puente: con ese problema en mente, mostramos los datos." data-next="Mira el problema">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Video</p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Video NutriCacao presentación</h2>
-<div class="rv z" style="--i:2;position:relative;width:1120px;height:630px;margin:26px auto 0;border-radius:32px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45);background:#000"><video id="vid" controls playsinline preload="auto" style="width:100%;height:100%;display:block;object-fit:contain"></video></div>
+<div class="rv z" style="--i:2;position:relative;width:1344px;height:756px;margin:14px auto 0;border-radius:32px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45);background:#000"><video id="vid" controls playsinline preload="auto" style="width:100%;height:100%;display:block;object-fit:contain"></video></div>
 <button class="next" data-go="1">Mira el problema <i>→</i></button>
 </section>
 
-<section class="s dark" id="s2" data-sec="Problema" data-note="Alizon (0:00 a 1:00). El 88% de los niños de 5 a 11 años consume azúcar a diario y el 34.1% de los escolares de primaria tiene sobrepeso u obesidad (INS, 2025). Nueve de cada diez cuidadores que revisan los octógonos cambian su decisión de compra. Dato de apoyo: el mercado de untables dulces mueve 13.5 mil toneladas al año, crece 2% anual y se estima en S/ 366 millones para 2027 (Euromonitor, 2025). Frase puente: con ese problema en mente, ¿qué proponemos?" data-next="Conoce la solución">
+<section class="s dark" id="s2" data-sec="El problema" data-note="Alizon (0:00 a 1:00). El 88% de los niños de 5 a 11 años consume azúcar a diario y el 34.1% de los escolares de primaria tiene sobrepeso u obesidad (INS, 2025). Nueve de cada diez cuidadores que revisan los octógonos cambian su decisión de compra. Dato de apoyo: el mercado de untables dulces mueve 13.5 mil toneladas al año, crece 2% anual y se estima en S/ 366 millones para 2027 (Euromonitor, 2025). Frase puente: con ese problema en mente, ¿qué proponemos?" data-next="Conoce la solución">
 <img class="logo" data-img="logoc" alt="NutriCacao">
 <p class="pg"></p>
-<p class="eyebrow rv">El problema</p>
 <h2 class="rv" style="--i:1;max-width:1500px">Los niños comen mucha azúcar y a los padres les faltan opciones</h2>
 <div class="row" style="margin-top:30px;gap:40px">
 <div class="card f1 col rv" style="--i:2;align-items:center;text-align:center;gap:18px">
@@ -169,9 +166,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Conoce la solución <i>→</i></button>
 </section>
 
-<section class="s" id="s3" data-sec="Producto" data-note="Alizon (1:00 a 2:00). NutriCacao es una crema untable de cacao y maní con cushuro, endulzada con estevia. Dos formatos: frasco de vidrio de 200 g a S/ 29.90 (10 porciones de 20 g) y sachet de 50 g con boquilla a S/ 7.90 (2.5 porciones). Composición del frasco: 40% pasta de maní, 34.98% maltodextrina, 10% leche descremada, 10% cacao, 4.5% cushuro, 0.5% lecitina y 0.02% estevia. Aporte por porción: es una ESTIMACIÓN con valores de referencia de cada insumo y los datos del cushuro del trabajo (hasta 36.9 g de proteína y 26.2 mg de hierro por 100 g); unos 3.4 g de proteína y 0.67 mg de hierro por porción de 20 g. Necesidades diarias de referencia (DRI): 4 a 8 años, 19 g de proteína y 10 mg de hierro; 9 a 13 años, 34 g y 8 mg. Se declarará con análisis de laboratorio. Una nutricionista advirtió que el cacao puede reducir la absorción del hierro no hemínico: combinar con vitamina C. Mensaje madre: El mismo sabor de siempre, con la fuerza nutritiva que le faltaba." data-next="Mira el mercado">
+<section class="s" id="s3" data-sec="El producto" data-note="Alizon (1:00 a 2:00). NutriCacao es una crema untable de cacao y maní con cushuro, endulzada con estevia. Dos formatos: frasco de vidrio de 200 g a S/ 29.90 (10 porciones de 20 g) y sachet de 50 g con boquilla a S/ 7.90 (2.5 porciones). Composición del frasco: 40% pasta de maní, 34.98% maltodextrina, 10% leche descremada, 10% cacao, 4.5% cushuro, 0.5% lecitina y 0.02% estevia. Aporte por porción: es una ESTIMACIÓN con valores de referencia de cada insumo y los datos del cushuro del trabajo (hasta 36.9 g de proteína y 26.2 mg de hierro por 100 g); unos 3.4 g de proteína y 0.67 mg de hierro por porción de 20 g. Necesidades diarias de referencia (DRI): 4 a 8 años, 19 g de proteína y 10 mg de hierro; 9 a 13 años, 34 g y 8 mg. Se declarará con análisis de laboratorio. Una nutricionista advirtió que el cacao puede reducir la absorción del hierro no hemínico: combinar con vitamina C. Mensaje madre: El mismo sabor de siempre, con la fuerza nutritiva que le faltaba." data-next="Mira el mercado">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">El producto</p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">El mismo sabor de siempre, con <span class="hl">hierro y proteína</span></h2>
 <div class="row" style="margin-top:24px;gap:44px;align-items:flex-start">
 <div class="col" style="width:700px;flex:none;gap:16px">
@@ -200,9 +196,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira el mercado <i>→</i></button>
 </section>
 
-<section class="s dark" id="s5" data-sec="Mercado" data-note="Merly (2:00 a 3:15). Investigación de enfoque mixto: 5 expertos, 10 padres, focus groups con degustación, observación en góndola y 598 respuestas de encuesta, 406 válidas (mínimo 385; error muestral 4.9%). El 98.3% compró untables dulces en los últimos tres meses; se consumen en el desayuno (88.9%) y la lonchera (52.0%). Embudo: 2,645,900 hogares de Lima Metropolitana, 47.7% NSE A, B y C1, 30.9% con hijos de 3 a 12 años, 61.7% compra untables dulces: 240,300 hogares. Captación: 22.5% frasco y 18.6% sachet. La demanda se ajusta por sesgo de intención de compra, apertura por zonas y cobertura de canales. Reconocer que la encuesta fue en línea y sin muestreo probabilístico. Aclarar antes cuántos focus groups se hicieron (resumen: 4; Tabla 3: 2)." data-next="Mira a la competencia">
+<section class="s dark" id="s5" data-sec="El mercado" data-note="Merly (2:00 a 3:15). Investigación de enfoque mixto: 5 expertos, 10 padres, focus groups con degustación, observación en góndola y 598 respuestas de encuesta, 406 válidas (mínimo 385; error muestral 4.9%). El 98.3% compró untables dulces en los últimos tres meses; se consumen en el desayuno (88.9%) y la lonchera (52.0%). Embudo: 2,645,900 hogares de Lima Metropolitana, 47.7% NSE A, B y C1, 30.9% con hijos de 3 a 12 años, 61.7% compra untables dulces: 240,300 hogares. Captación: 22.5% frasco y 18.6% sachet. La demanda se ajusta por sesgo de intención de compra, apertura por zonas y cobertura de canales. Reconocer que la encuesta fue en línea y sin muestreo probabilístico. Aclarar antes cuántos focus groups se hicieron (resumen: 4; Tabla 3: 2)." data-next="Mira a la competencia">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">El mercado</p>
 <h2 class="rv" style="--i:1">240,300 hogares que ya compran untables dulces</h2>
 <div class="row" style="margin-top:44px;gap:60px">
 <div class="col f1" style="gap:14px" id="funnel"></div>
@@ -215,9 +210,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira a la competencia <i>→</i></button>
 </section>
 
-<section class="s" id="s6" data-sec="Competencia" data-note="Merly (3:15 a 4:15). En el PESTEG pesan más las oportunidades (preocupación por el azúcar infantil, alimentos funcionales, comercio electrónico) que las amenazas (Ley 30021, rivalidad, abastecimiento de cushuro); la matriz EFE da 2.97, sobre el promedio de 2.5. Porter muestra alta rivalidad y sustitutos: estrategia de enfoque en diferenciación. El mapa de grupos estratégicos muestra que ningún competidor ofrece una crema de cacao sin octógonos con un nutriente funcional. VRIO: la ventaja sostenible es la fórmula propia y el sabor. Honestidad ante preguntas: la barrera de imitación vía maquila es baja. Posiciones del mapa: estimación del equipo por observación en góndola." data-next="Mira el marketing">
+<section class="s" id="s6" data-sec="Entorno y estrategia" data-note="Merly (3:15 a 4:15). En el PESTEG pesan más las oportunidades (preocupación por el azúcar infantil, alimentos funcionales, comercio electrónico) que las amenazas (Ley 30021, rivalidad, abastecimiento de cushuro); la matriz EFE da 2.97, sobre el promedio de 2.5. Porter muestra alta rivalidad y sustitutos: estrategia de enfoque en diferenciación. El mapa de grupos estratégicos muestra que ningún competidor ofrece una crema de cacao sin octógonos con un nutriente funcional. VRIO: la ventaja sostenible es la fórmula propia y el sabor. Honestidad ante preguntas: la barrera de imitación vía maquila es baja. Posiciones del mapa: estimación del equipo por observación en góndola." data-next="Mira el marketing">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Entorno y estrategia</p>
 <h2 class="rv" style="--i:1">Competimos por diferenciación, no por precio</h2>
 <div class="row" style="margin-top:34px;gap:60px">
 <div class="rv z" style="--i:2;position:relative;width:960px;height:640px;flex:none;background:var(--paper);border:3px solid var(--line);border-radius:32px" id="map">
@@ -234,11 +228,10 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira el marketing <i>→</i></button>
 </section>
 
-<section class="s" id="s7" data-sec="Marketing" data-note="Nayeli (4:15 a 5:30). Posicionamiento: Para padres que cuidan lo que comen sus hijos, NutriCacao es la crema de cacao sin octógonos que aporta hierro. Lógica: probar antes que convencer, porque el sabor decide la recompra y el consumidor asocia lo saludable con mal sabor; por eso la mayor inversión de 2027 y 2028 va a degustaciones y a la voz de especialistas e influencers, no a descuentos. Cada canal tiene un rol, un mensaje y una táctica (Tabla 18). Márgenes brutos del frasco: supermercados 38.2%, tiendas especializadas 52.1%, venta directa 64.1%. Precio S/ 29.90: 44.3% de los encuestados paga entre S/ 20 y S/ 29.90. La Ley 30021 obliga a comunicar a los padres, no a los niños." data-next="Mira cuánto invertimos">
+<section class="s" id="s7" data-sec="Marketing · Estrategia" data-note="Nayeli (4:15 a 5:30). Posicionamiento: Para padres que cuidan lo que comen sus hijos, NutriCacao es la crema de cacao sin octógonos que aporta hierro. Lógica: probar antes que convencer, porque el sabor decide la recompra y el consumidor asocia lo saludable con mal sabor; por eso la mayor inversión de 2027 y 2028 va a degustaciones y a la voz de especialistas e influencers, no a descuentos. Cada canal tiene un rol, un mensaje y una táctica (Tabla 18). Márgenes brutos del frasco: supermercados 38.2%, tiendas especializadas 52.1%, venta directa 64.1%. Precio S/ 29.90: 44.3% de los encuestados paga entre S/ 20 y S/ 29.90. La Ley 30021 obliga a comunicar a los padres, no a los niños." data-next="Mira cuánto invertimos">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <div class="row" style="gap:50px;align-items:flex-start">
 <div class="col" style="width:850px;flex:none;gap:0">
-<p class="eyebrow rv">Marketing · Estrategia</p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Probar antes que convencer</h2>
 <div class="bubble rv" style="--i:2;margin-top:20px;font:800 27px/1.3 var(--ff-h);padding:18px 30px">Para padres que cuidan lo que comen sus hijos, NutriCacao es la crema de cacao sin octógonos que aporta hierro.</div>
 <p class="rv" style="--i:3;margin:20px 0 10px;font-size:26px;font-weight:700;color:var(--ink)">Cada canal tiene su papel. Elige uno:</p>
@@ -256,9 +249,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira cuánto invertimos <i>→</i></button>
 </section>
 
-<section class="s" id="s19" data-sec="Marketing" data-note="Nayeli. Inversión total de marketing (Tabla 19, sin IGV): S/ 374,581 en 2027 (28.0% de las ventas netas), S/ 322,170 en 2028 (12.1%), S/ 287,281 en 2029 (8.1%), S/ 342,956 en 2030 (8.1%) y S/ 371,273 en 2031 (8.0%). Dos fases: 2027 y 2028, plan intensivo con la agencia La Burbuja; desde 2029 el equipo interno gestiona 8% de las ventas. Los S/ 16,949 de diagnóstico, estrategia, identidad visual y fotografía de prelanzamiento se registran como gastos preoperativos en noviembre y diciembre de 2026. Total de cinco años: unos S/ 1.70 M, cerca de 10.4% de las ventas acumuladas (cálculo propio con las tablas del trabajo)." data-next="Mira qué incluye">
+<section class="s" id="s19" data-sec="Marketing · Inversión" data-note="Nayeli. Inversión total de marketing (Tabla 19, sin IGV): S/ 374,581 en 2027 (28.0% de las ventas netas), S/ 322,170 en 2028 (12.1%), S/ 287,281 en 2029 (8.1%), S/ 342,956 en 2030 (8.1%) y S/ 371,273 en 2031 (8.0%). Dos fases: 2027 y 2028, plan intensivo con la agencia La Burbuja; desde 2029 el equipo interno gestiona 8% de las ventas. Los S/ 16,949 de diagnóstico, estrategia, identidad visual y fotografía de prelanzamiento se registran como gastos preoperativos en noviembre y diciembre de 2026. Total de cinco años: unos S/ 1.70 M, cerca de 10.4% de las ventas acumuladas (cálculo propio con las tablas del trabajo)." data-next="Mira qué incluye">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Marketing · Inversión</p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Cuánto invertimos y qué parte de las ventas es</h2>
 <div class="row" style="margin-top:22px;gap:50px">
 <div class="col" style="width:930px;flex:none"><div class="tabs rv" style="--i:2" id="mktabs"></div>
@@ -274,9 +266,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira qué incluye <i>→</i></button>
 </section>
 
-<section class="s" id="s20" data-sec="Marketing" data-note="Nayeli. Qué incluye el gasto. 2027: influencers y UGC S/ 96,000; pauta digital S/ 60,000; degustaciones S/ 53,130; redes sociales S/ 46,610; material POP S/ 46,610; lanzamiento con la agencia (desarrollo inicial, producción audiovisual, relaciones públicas y gestión de influencers) S/ 44,492; SEO S/ 13,729; jalavistas y hosting S/ 14,010. Desde 2029, el 8% de las ventas se reparte en pauta 35%, degustaciones 25%, influencers 12%, contenido 12%, trade y POP 10% y fidelización 6%. Degustaciones: una por tienda cada dos meses en el primer semestre de 2027 y cada cuatro después, con impulsadora y espacio a S/ 220 por día." data-next="Mira el plan por año">
+<section class="s" id="s20" data-sec="Marketing · Qué incluye" data-note="Nayeli. Qué incluye el gasto. 2027: influencers y UGC S/ 96,000; pauta digital S/ 60,000; degustaciones S/ 53,130; redes sociales S/ 46,610; material POP S/ 46,610; lanzamiento con la agencia (desarrollo inicial, producción audiovisual, relaciones públicas y gestión de influencers) S/ 44,492; SEO S/ 13,729; jalavistas y hosting S/ 14,010. Desde 2029, el 8% de las ventas se reparte en pauta 35%, degustaciones 25%, influencers 12%, contenido 12%, trade y POP 10% y fidelización 6%. Degustaciones: una por tienda cada dos meses en el primer semestre de 2027 y cada cuatro después, con impulsadora y espacio a S/ 220 por día." data-next="Mira el plan por año">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Marketing · Qué incluye</p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">En qué se va cada sol de marketing</h2>
 <div class="row" style="margin-top:20px;gap:50px;align-items:flex-start">
 <div class="col" style="width:1130px;flex:none"><div class="tabs rv" style="--i:2" id="itabs"><button class="tab on" data-iy="0">2027</button><button class="tab" data-iy="1">2028</button><button class="tab" data-iy="2">2029 en adelante</button></div>
@@ -289,9 +280,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira el plan por año <i>→</i></button>
 </section>
 
-<section class="s" id="s21" data-sec="Marketing" data-note="Nayeli. Plan por año (Tabla 20): 2027, 67 puntos de venta, zonas 7 (enero) y 6 (julio), objetivo generar prueba y credibilidad; 2028, 85 puntos, zonas 8 y 2, impulsar recompra y rotación; 2029, 99 puntos, zonas 5 y 1; 2030, 118 puntos, zonas 9 y 4; 2031, 121 puntos, zona 3 (toda Lima). Online: la web es el centro porque ahí se capturan ventas y datos; embudo de tres etapas; metas: costo por venta online de S/ 15 o menos por pedido, interacción de 3% o más y recompra a 90 días. Offline: degustaciones como táctica central, POP, jalavistas de S/ 300 por supermercado nuevo y mercaderismo. Participación de mercado: de 0.63% a 2.0% al 2031." data-next="Mira las ventas">
+<section class="s" id="s21" data-sec="Marketing · Plan por año" data-note="Nayeli. Plan por año (Tabla 20): 2027, 67 puntos de venta, zonas 7 (enero) y 6 (julio), objetivo generar prueba y credibilidad; 2028, 85 puntos, zonas 8 y 2, impulsar recompra y rotación; 2029, 99 puntos, zonas 5 y 1; 2030, 118 puntos, zonas 9 y 4; 2031, 121 puntos, zona 3 (toda Lima). Online: la web es el centro porque ahí se capturan ventas y datos; embudo de tres etapas; metas: costo por venta online de S/ 15 o menos por pedido, interacción de 3% o más y recompra a 90 días. Offline: degustaciones como táctica central, POP, jalavistas de S/ 300 por supermercado nuevo y mercaderismo. Participación de mercado: de 0.63% a 2.0% al 2031." data-next="Mira las ventas">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Marketing · Plan por año</p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Del lanzamiento a toda Lima, año por año</h2>
 <div class="row" style="margin-top:24px;gap:18px" id="ystep"></div>
 <div class="card rv" style="--i:6;margin-top:18px;padding:18px 32px;display:flex;gap:40px"><div style="width:520px;flex:none"><p class="eyebrow" style="font-size:20px;margin-bottom:4px">Zonas nuevas</p><p style="font:800 30px var(--ff-h);color:var(--ink)" id="yz"></p></div><div class="f1"><p class="eyebrow" style="font-size:20px;margin-bottom:4px">Acciones prioritarias</p><p style="font-size:24px" id="ya"></p></div></div>
@@ -302,9 +292,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira las ventas <i>→</i></button>
 </section>
 
-<section class="s dark" id="s8" data-sec="Ventas" data-note="Nayeli. Ventas netas de S/ 1,337,433 en 2027 a S/ 4,623,287 en 2031; participación del 0.63% al 2.0% del valor del mercado de untables dulces; de 67 a 121 puntos de venta. Crecimiento calculado sobre las ventas del trabajo. Lanzamiento el 1 de enero de 2027 en la zona 7; nueve zonas de Lima en 2031 (Ansoff: desarrollo de producto y luego penetración por zonas)." data-next="Mira cómo lo producimos">
+<section class="s dark" id="s8" data-sec="Ventas proyectadas" data-note="Nayeli. Ventas netas de S/ 1,337,433 en 2027 a S/ 4,623,287 en 2031; participación del 0.63% al 2.0% del valor del mercado de untables dulces; de 67 a 121 puntos de venta. Crecimiento calculado sobre las ventas del trabajo. Lanzamiento el 1 de enero de 2027 en la zona 7; nueve zonas de Lima en 2031 (Ansoff: desarrollo de producto y luego penetración por zonas)." data-next="Mira cómo lo producimos">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Ventas proyectadas</p>
 <h2 class="rv" style="--i:1">De S/ 1.34 M a <span class="hl">S/ 4.62 M</span> en cinco años</h2>
 <div class="row" style="margin-top:30px;gap:50px">
 <div class="f1 rv" style="--i:2;position:relative;height:610px" id="vchart"></div>
@@ -316,9 +305,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira cómo lo producimos <i>→</i></button>
 </section>
 
-<section class="s" id="s9" data-sec="Operaciones" data-note="Nayeli (5:30 a 6:45). No hay planta propia: Inkao Perú produce por lotes (mínimo 100 kg, plazo de 15 días hábiles), el producto llega al almacén de Chorrillos y se despacha. Solo producir y envasar lo ejecuta un tercero; NutriCacao controla los otros cinco procesos. Ningún lote se vende sin análisis microbiológico y de composición en laboratorio acreditado. Equipo: 5 personas en 2027 y 10 en 2031, más nutricionista por honorarios; S.A.C. con cuatro socias (25% cada una), Régimen MYPE Tributario. Riesgo: capacidad de Inkao (unos 3,150 kg al mes según su informe) frente al requerimiento del plan (3.4 t en 2029 y 4.3 t en 2031): contrato con capacidad creciente y segundo maquilador en 2028. Revisar la unidad de estas cifras en el trabajo antes de sustentar." data-next="Mira la inversión">
+<section class="s" id="s9" data-sec="Operaciones y equipo" data-note="Nayeli (5:30 a 6:45). No hay planta propia: Inkao Perú produce por lotes (mínimo 100 kg, plazo de 15 días hábiles), el producto llega al almacén de Chorrillos y se despacha. Solo producir y envasar lo ejecuta un tercero; NutriCacao controla los otros cinco procesos. Ningún lote se vende sin análisis microbiológico y de composición en laboratorio acreditado. Equipo: 5 personas en 2027 y 10 en 2031, más nutricionista por honorarios; S.A.C. con cuatro socias (25% cada una), Régimen MYPE Tributario. Riesgo: capacidad de Inkao (unos 3,150 kg al mes según su informe) frente al requerimiento del plan (3.4 t en 2029 y 4.3 t en 2031): contrato con capacidad creciente y segundo maquilador en 2028. Revisar la unidad de estas cifras en el trabajo antes de sustentar." data-next="Mira la inversión">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Operaciones y equipo</p>
 <h2 class="rv" style="--i:1">Maquila con control de calidad por lote</h2>
 <div style="position:relative;margin-top:46px">
 <div class="conn" style="left:80px;right:80px;width:auto"></div>
@@ -338,9 +326,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira la inversión <i>→</i></button>
 </section>
 
-<section class="s" id="s10" data-sec="Finanzas" data-note="Valery (6:45 a 7:45). La inversión inicial es de S/ 48,569 con IGV porque la producción es tercerizada. El financiamiento total es de S/ 680,000 (S/ 380,000 de las socias y S/ 300,000 de préstamo a TEA de 12.5%, 72 meses y 12 de gracia), porque las cadenas pagan a 120 días mientras los proveedores cobran antes; 92.9% es capital de trabajo. 2027 cierra con pérdida de S/ 201,891 (marketing de lanzamiento: 28% de las ventas). Desde 2028 hay utilidad: S/ 264,194; en 2031, S/ 719,936 (15.6%). Año más ajustado: 2028, el flujo de operación (S/ 21,016) no cubre el servicio de deuda (S/ 79,782) y se cubre con caja acumulada. La caja nunca baja de S/ 10,000." data-next="Mira el VAN y la TIR">
+<section class="s" id="s10" data-sec="Plan financiero" data-note="Valery (6:45 a 7:45). La inversión inicial es de S/ 48,569 con IGV porque la producción es tercerizada. El financiamiento total es de S/ 680,000 (S/ 380,000 de las socias y S/ 300,000 de préstamo a TEA de 12.5%, 72 meses y 12 de gracia), porque las cadenas pagan a 120 días mientras los proveedores cobran antes; 92.9% es capital de trabajo. 2027 cierra con pérdida de S/ 201,891 (marketing de lanzamiento: 28% de las ventas). Desde 2028 hay utilidad: S/ 264,194; en 2031, S/ 719,936 (15.6%). Año más ajustado: 2028, el flujo de operación (S/ 21,016) no cubre el servicio de deuda (S/ 79,782) y se cubre con caja acumulada. La caja nunca baja de S/ 10,000." data-next="Mira el VAN y la TIR">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Plan financiero</p>
 <h2 class="rv" style="--i:1">Poca inversión, mucho capital de trabajo</h2>
 <div class="row" style="margin-top:30px;gap:28px">
 <div class="card f1 rv" style="--i:2;padding:24px 30px"><p class="big" style="font-size:56px">S/ <span data-count="48569" data-sep="1">0</span></p><p style="font-size:24px">inversión inicial con IGV: producción tercerizada</p></div>
@@ -355,7 +342,6 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 
 <section class="s dark" id="s11" data-sec="Viabilidad" data-note="Valery (7:45 a 8:45). WACC de 11.68% por CAPM (costo del patrimonio 13.94%, costo de la deuda después de impuestos 8.81%, 44.12% de deuda). VAN de S/ 576,633 y TIR de 43.1%; con tasa exigente de 20% el VAN sigue positivo (S/ 332,325). El FCL acumulado es positivo en 2030, cuarto año. Sin valor terminal. Sensibilidad: las ventas son la variable crítica. Con 5% menos de crecimiento anual el VAN es S/ 329,264; con 10% menos, S/ 84,742 (TIR 17.5%); con 15% menos es negativo (S/ -145,825). Por eso se vigilan cada mes la rotación en tienda y la apertura de zonas. Con financiamiento 100% de las socias el VAN sigue positivo (S/ 535,419). Mover el control cambia el escenario en vivo." data-next="Mira la sostenibilidad">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Viabilidad</p>
 <h2 class="rv" style="--i:1">Prueba tú mismo cuánto aguanta el negocio</h2>
 <div class="row" style="margin-top:34px;gap:56px">
 <div class="col" style="width:760px;flex:none;gap:24px">
@@ -380,9 +366,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Mira la sostenibilidad <i>→</i></button>
 </section>
 
-<section class="s" id="s12" data-sec="Sostenibilidad" data-note="Valery (8:45 a 9:30). Sostenible en tres dimensiones. Económica: utilidad desde 2028, VAN positivo, caja mínima protegida y deuda que baja de 3.0 a 0.3 veces el patrimonio. Social: mejor nutrición infantil, valor a un insumo andino y empleo formal con capacitación anual. Ambiental: envase de vidrio, merma controlada de 1.5% y riesgo glaciar sobre las lagunas del cushuro: segundo proveedor. Tres riesgos con mitigación: ventas, Ley 30021 y registro sanitario, y un solo maquilador. Usar solo lo que está en el trabajo; no prometer indicadores ambientales que no se calcularon." data-next="Mira las conclusiones">
+<section class="s" id="s12" data-sec="Sostenibilidad y riesgos" data-note="Valery (8:45 a 9:30). Sostenible en tres dimensiones. Económica: utilidad desde 2028, VAN positivo, caja mínima protegida y deuda que baja de 3.0 a 0.3 veces el patrimonio. Social: mejor nutrición infantil, valor a un insumo andino y empleo formal con capacitación anual. Ambiental: envase de vidrio, merma controlada de 1.5% y riesgo glaciar sobre las lagunas del cushuro: segundo proveedor. Tres riesgos con mitigación: ventas, Ley 30021 y registro sanitario, y un solo maquilador. Usar solo lo que está en el trabajo; no prometer indicadores ambientales que no se calcularon." data-next="Mira las conclusiones">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Sostenibilidad y riesgos</p>
 <h2 class="rv" style="--i:1">Sostenible, con los riesgos a la vista</h2>
 <div class="row" style="margin-top:40px;gap:30px">
 <div class="card f1 rv" style="--i:2;border-top:14px solid var(--orange)"><h3>Económica</h3><p style="margin-top:12px;font-size:28px">Utilidad desde 2028 y VAN positivo. La caja nunca baja de S/ 10,000. Deuda: de 3.0 a 0.3 veces el patrimonio.</p></div>
@@ -400,7 +385,6 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 
 <section class="s" id="s13" data-sec="Conclusiones" data-note="Alizon (9:30 a 10:00). Tres conclusiones: (1) el problema es real y el sabor decide la recompra; (2) hay mercado suficiente, 240,300 hogares, y una posición diferenciada sin competidor directo; (3) el proyecto es viable, VAN de S/ 576,633 y TIR de 43.1%, pero intensivo en capital de trabajo y sensible al volumen de ventas. Recomendación: validar la fórmula en laboratorio antes del registro sanitario, contratar capacidad creciente con Inkao y abrir zonas solo si la rotación supera la proyectada. Cierre: repetir el mensaje madre, agradecer y mirar al jurado." data-next="Cierra con nosotras">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Conclusiones</p>
 <h2 class="rv" style="--i:1">Un negocio viable, con un riesgo medido</h2>
 <div class="row" style="margin-top:44px;gap:30px">
 <div class="card f1 rv" style="--i:2"><p class="big" style="font-size:96px">1</p><h3 style="margin-top:8px">El problema es real</h3><p style="font-size:28px;margin-top:10px">Los padres quieren hierro y menos azúcar, y el sabor decide la recompra.</p></div>
@@ -425,9 +409,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Ver anexos <i>→</i></button>
 </section>
 
-<section class="s" id="s15" data-sec="Anexo" data-note="Respaldo: Tablas 40, 42 y 44 del trabajo, redondeadas a miles de soles. El FCL acumulado incluye el periodo 0 (2026) de S/ -49 mil. La caja nunca baja del mínimo de S/ 10,000; la más baja es S/ 17,329 en abril de 2028. Punto de equilibrio: S/ 1.79 M en 2027 y S/ 2.06 M en 2028." data-next="Anexo: modelo Canvas">
+<section class="s" id="s15" data-sec="Anexo · Finanzas" data-note="Respaldo: Tablas 40, 42 y 44 del trabajo, redondeadas a miles de soles. El FCL acumulado incluye el periodo 0 (2026) de S/ -49 mil. La caja nunca baja del mínimo de S/ 10,000; la más baja es S/ 17,329 en abril de 2028. Punto de equilibrio: S/ 1.79 M en 2027 y S/ 2.06 M en 2028." data-next="Anexo: modelo Canvas">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Anexo · Finanzas</p>
 <h2 class="rv" style="--i:1;font-size:62px">Estados financieros proyectados (S/ miles)</h2>
 <table class="rv" style="--i:2;margin-top:30px"><tr><th>Concepto</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr>
 <tr><td>Ventas netas</td><td>1,337</td><td>2,662</td><td>3,536</td><td>4,209</td><td>4,623</td></tr>
@@ -442,9 +425,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: modelo Canvas <i>→</i></button>
 </section>
 
-<section class="s" id="s16" data-sec="Anexo" data-note="Respaldo: Tabla 1 del trabajo (modelo de negocio Canvas, elaboración propia con base en Osterwalder y Pigneur, 2010)." data-next="Volver al inicio">
+<section class="s" id="s16" data-sec="Anexo · Modelo de negocio" data-note="Respaldo: Tabla 1 del trabajo (modelo de negocio Canvas, elaboración propia con base en Osterwalder y Pigneur, 2010)." data-next="Volver al inicio">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Anexo · Modelo de negocio</p>
 <h2 class="rv" style="--i:1;font-size:62px">Modelo Canvas</h2>
 <div style="display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(2,1fr);gap:16px;margin-top:22px;height:560px">
 <div class="card rv" style="--i:2;padding:20px 24px;grid-row:span 2"><h3 style="font-size:26px;color:var(--orange-d)">Socios clave</h3><p style="font-size:23px;margin-top:8px">Inkao Perú (maquila), proveedores, nutricionista, agencia La Burbuja y laboratorio.</p></div>
@@ -459,9 +441,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: fórmula y Ley 30021 <i>→</i></button>
 </section>
 
-<section class="s" id="s4" data-sec="Anexo" data-note="Respaldo: Tablas 23, 24 y 25 del trabajo. Costo de materia prima por frasco: S/ 5.57 (incluye 3% de merma). Octógonos desde 10 g de azúcar total, 4 g de grasa saturada o 400 mg de sodio por 100 g de sólido. Meta de diseño: máximo 8 g de azúcar total y 3.5 g de grasa saturada por 100 g. El análisis fisicoquímico del lote final se hace antes de solicitar el registro sanitario. Alérgenos: maní, leche y soya. Vida útil de 12 meses, por validar." data-next="Volver al inicio">
+<section class="s" id="s4" data-sec="Anexo · Producto y regulación" data-note="Respaldo: Tablas 23, 24 y 25 del trabajo. Costo de materia prima por frasco: S/ 5.57 (incluye 3% de merma). Octógonos desde 10 g de azúcar total, 4 g de grasa saturada o 400 mg de sodio por 100 g de sólido. Meta de diseño: máximo 8 g de azúcar total y 3.5 g de grasa saturada por 100 g. El análisis fisicoquímico del lote final se hace antes de solicitar el registro sanitario. Alérgenos: maní, leche y soya. Vida útil de 12 meses, por validar." data-next="Volver al inicio">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<p class="eyebrow rv">Anexo · Producto y regulación</p>
 <h2 class="rv" style="--i:1;font-size:62px;white-space:nowrap">Fórmula del frasco de 200 g y Ley 30021</h2>
 <div class="row" style="margin-top:26px;gap:60px;align-items:flex-start">
 <table class="rv" style="--i:2;width:860px;flex:none;font-size:28px"><tr><th>Insumo</th><th>% de la fórmula</th><th>Gramos</th></tr>
