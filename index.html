@@ -296,16 +296,20 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Cuánto invertimos y qué parte de las ventas es</h2>
 <div class="row" style="margin-top:22px;gap:50px">
-<div class="col" style="width:930px;flex:none"><div class="tabs rv" style="--i:2" id="mktabs"></div>
+<div class="col" style="width:760px;flex:none"><div class="tabs rv" style="--i:2" id="mktabs"></div>
 <div class="rv" style="--i:3;position:relative;height:610px;margin-top:6px" id="mkchart"></div></div>
-<div class="col f1" style="gap:16px;min-width:0">
-<div class="card rv" style="--i:4;padding:22px 30px"><p class="eyebrow" id="mkphase" style="margin-bottom:4px;font-size:21px"></p><p class="big" style="font-size:84px" id="mktot">S/ 374,581</p><p style="font-size:26px" id="mkpct"></p></div>
-<div class="rv" style="--i:5;position:relative;flex:1;min-height:300px;border-radius:32px;overflow:hidden;box-shadow:0 24px 50px rgba(58,28,16,.3)"><img data-img="kids" alt="Niños con NutriCacao" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%"><div style="position:absolute;left:0;right:0;bottom:0;padding:60px 30px 22px;background:linear-gradient(transparent,rgba(58,28,16,.92));color:#fff;font:800 31px/1.2 var(--ff-h)">Del 28% de las ventas en el lanzamiento al 8% desde 2029</div></div>
+<div class="row f1" style="gap:24px;min-width:0;align-items:stretch">
+<div class="col f1" style="gap:16px;min-width:0;justify-content:center">
+<div class="card rv" style="--i:4;padding:22px 30px"><p class="eyebrow" id="mkphase" style="margin-bottom:4px;font-size:21px"></p><p class="big" style="font-size:64px" id="mktot">S/ 374,581</p><p style="font-size:26px" id="mkpct"></p></div>
+<div class="card rv" style="--i:5;padding:20px 28px;background:var(--sand);border-color:var(--sand)"><p style="font:800 28px/1.25 var(--ff-h);color:var(--ink)">Del 28% de las ventas en el lanzamiento al 8% desde 2029</p></div>
+</div>
+<div class="rv z" style="--i:5;flex:none;width:372px;height:662px;border-radius:32px;overflow:hidden;background:#000;box-shadow:0 24px 50px rgba(58,28,16,.3)"><video id="mvid" muted loop playsinline controls style="width:100%;height:100%;object-fit:cover"></video></div>
+</div>
 <div style="display:none"><div class="card rv" style="--i:5;padding:20px 30px"><p style="font-size:24px;margin-bottom:10px" id="mkcmp"></p>
 <div style="height:46px;border-radius:23px;background:var(--line);overflow:hidden;position:relative"><div id="mkslice" style="height:100%;width:0;background:var(--orange);border-radius:23px;transition:width 1s cubic-bezier(.2,.8,.2,1)"></div></div>
 <div class="row" style="justify-content:space-between;font-size:20px;color:var(--muted);margin-top:6px"><span>Marketing</span><span id="mkvt"></span></div></div>
 <div class="card rv" style="--i:6;padding:18px 30px;background:var(--sand);border-color:var(--sand)"><p style="font-size:24px"><b>En los 5 años:</b> unos <b class="hl">S/ 1.70 M</b>, cerca de <b class="hl">10.4%</b> de las ventas acumuladas (cálculo propio con las tablas del trabajo).</p></div></div>
-</div></div>
+</div>
 <p class="src">Montos sin IGV. Fuente: presupuesto anual de marketing del trabajo (Tabla 19).</p>
 <button class="next" data-go="1">Mira qué incluye <i>→</i></button>
 </section>
@@ -800,12 +804,13 @@ const IMG={
  "brand_thebutterfactory": "img/brand_thebutterfactory.png",
  "poster": "img/poster.jpg",
  "video": "img/video.mp4",
- "kids": "img/kids.jpg"
+ "kids": "img/kids.jpg",
+ "mktvid": "img/marketing.mp4"
 };
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const slides=$$('.s'),N=slides.length,ANEX=14;
 const SEC=slides.map(x=>x.dataset.sec||'');
-$$('[data-img]').forEach(e=>{e.src=IMG[e.dataset.img]});$('#vid').src=IMG.video;$('#vid').poster=IMG.poster;
+$$('[data-img]').forEach(e=>{e.src=IMG[e.dataset.img]});$('#vid').src=IMG.video;$('#mvid').src=IMG.mktvid;$('#vid').poster=IMG.poster;
 const fmt=(n,d=0,sep=0)=>{let s=Math.abs(n).toFixed(d);if(sep)s=s.replace(/\B(?=(\d{3})+(?!\d))/g,',');return(n<0?'-':'')+s};
 const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
 let cur=0,tmr={};
@@ -820,7 +825,7 @@ function tween(el,to,f,dur=700){const from=+el._v||0;el._v=to;if(rm){el.textCont
 /* navegación */
 function go(i,fromHash){i=Math.max(0,Math.min(N-1,i));slides.forEach((s,k)=>s.classList.toggle('act',k===i));cur=i;
 $$('.gbar',slides[i]).forEach(b=>{b.style.transition='none';const w=b.style.width;b.dataset.w=b.dataset.w||w;b.style.width='0';b.offsetWidth;b.style.transition='width 1.4s cubic-bezier(.2,.8,.2,1) .8s';b.style.width=b.dataset.w});
-{const v=$('#vid');if(slides[i].id==='s18'){try{v.currentTime=0;const pp=v.play();pp&&pp.catch(()=>{})}catch(e){}}else v.pause()}
+{const v=$('#vid');if(slides[i].id==='s18'){try{v.currentTime=0;const pp=v.play();pp&&pp.catch(()=>{})}catch(e){}}else v.pause();const mv=$('#mvid');if(slides[i].id==='s19'){try{mv.currentTime=0;const q=mv.play();q&&q.catch(()=>{})}catch(e){}}else mv.pause()}
 count(slides[i]);onEnter[slides[i].id]&&onEnter[slides[i].id]();
 $('#bCnt').textContent=(i+1)+' / '+N;$('#prog').style.width=((i+1)/N*100)+'%';
 try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
