@@ -96,9 +96,6 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 .ctl button:hover{background:rgba(255,255,255,.16)}
 .ctl span{color:#fff;font:700 15px var(--ff-b);min-width:64px;text-align:center;font-variant-numeric:tabular-nums}
 #prog{position:fixed;left:0;top:0;height:6px;background:var(--orange);z-index:60;transition:width .5s ease;width:0}
-#notes{position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(251,241,224,.97);color:var(--ink);padding:18px max(24px,env(safe-area-inset-left,0px)) 64px;font:500 18px/1.5 var(--ff-b);max-height:42%;overflow:auto;border-top:4px solid var(--orange);transform:translateY(100%);transition:transform .35s}
-#notes.show{transform:none}
-#notes b{font-family:var(--ff-h)}
 .tab{white-space:nowrap}.tcard{width:380px}.ph{width:380px;height:560px;border-radius:32px;overflow:hidden;border:4px solid #fff;box-shadow:0 20px 40px rgba(58,28,16,.22)}.ph img{width:100%;height:100%;object-fit:cover;display:block}.tcard .nm{text-align:center;font:800 32px var(--ff-h);color:var(--ink);margin-top:16px}
 .nrow{display:flex;align-items:center;gap:10px;margin-top:7px}.nrow span{width:128px;flex:none;font-size:19px}.nt{flex:1;height:16px;background:var(--line);border-radius:8px;overflow:hidden}.nf{height:100%;width:0;background:var(--orange);border-radius:8px;transition:width 1s cubic-bezier(.2,.8,.2,1) .5s}.nf.g{background:var(--lime)}.nrow b{width:128px;text-align:right;font:800 19px var(--ff-h);color:var(--ink);white-space:nowrap}
 .chip{position:absolute;display:flex;align-items:center;height:44px;padding:0 14px;background:#fff;border:2px solid var(--line);border-radius:14px;font:800 23px var(--ff-h);color:var(--ink);white-space:nowrap}.chip img{height:30px;width:auto}
@@ -115,7 +112,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s act" id="s1" data-sec="Portada" data-note="Alizon (0:00). Saludo breve, nombre del proyecto y del equipo. Frase central: NutriCacao es la crema untable de cacao y maní con cushuro, sin octógonos y con hierro y proteína, que los niños aceptan por su sabor. Pasar directo al problema, sin leer la lámina." data-next="Empezar">
+<section class="s act" id="s1" data-sec="Portada" data-next="Empezar">
 <div class="blob" style="width:760px;height:760px;right:-120px;top:-160px;background:var(--orange);opacity:.2"></div>
 <div class="blob" style="width:420px;height:420px;left:-120px;bottom:-140px;background:var(--lime);opacity:.22"></div>
 <img class="logo" data-img="logo" alt="NutriCacao" style="height:70px">
@@ -131,16 +128,11 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Empezar <i>→</i></button>
 </section>
 
-<!-- ============================================================
-     LÁMINA 02 - NUESTRO EQUIPO   (id s17)
-     Todos los textos de esta lámina están dentro de esta sección.
-     Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
-     ============================================================ -->
-<section class="s" id="s17" data-sec="Nuestro equipo" data-note="Alizon. Presentar al equipo: cuatro socias de Administración de la Universidad del Pacífico y el asesor Gustavo Enrique Kanashiro Uechi. Decir en una frase qué área lideró cada integrante antes de pasar al video." data-next="Mira el video">
+<section class="s" id="s17" data-sec="Nuestro equipo" data-next="Mira el video">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Miembros del equipo</h2>
 <div class="row" style="margin-top:34px;gap:40px;justify-content:center">
-<div class="tcard rv" style="--i:2"><div class="ph"><img data-img="m1" alt="Miembro 1"></div><p class="nm">Alizon Quispe</p></div>
+<div class="tcard rv" style="--i:2"><div class="ph"><img data-img="m1" alt="Miembro 1"></div><p class="nm">Alizon Quizpe</p></div>
 <div class="tcard rv" style="--i:3"><div class="ph"><img data-img="m2" alt="Miembro 2"></div><p class="nm">Nayeli de la Cruz</p></div>
 <div class="tcard rv" style="--i:4"><div class="ph"><img data-img="m3" alt="Miembro 3"></div><p class="nm">Valery Muchari</p></div>
 <div class="tcard rv" style="--i:5"><div class="ph"><img data-img="m4" alt="Miembro 4"></div><p class="nm">Merly La Torre</p></div>
@@ -150,11 +142,18 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 </section>
 
 <!-- ============================================================
+     LÁMINA 02 - NUESTRO EQUIPO   (id s17)
+     Todos los textos de esta lámina están dentro de esta sección.
+     Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
+     ============================================================ -->
+
+
+<!-- ============================================================
      LÁMINA 03 - VIDEO   (id s18)
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s dark" id="s18" data-sec="Video" data-note="Alizon. Dar play al video (dura unos 15 segundos, empieza solo al entrar). Es el storytelling del problema: al terminar, decir la frase puente: con ese problema en mente, mostramos los datos." data-next="Mira el problema">
+<section class="s dark" id="s18" data-sec="Video" data-next="Mira el problema">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Video NutriCacao presentación</h2>
 <div class="rv z" style="--i:2;position:relative;width:1344px;height:756px;margin:14px auto 0;border-radius:32px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45);background:#000"><video id="vid" controls playsinline preload="auto" style="width:100%;height:100%;display:block;object-fit:contain"></video></div>
@@ -166,7 +165,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s dark" id="s2" data-sec="El problema" data-note="Alizon (0:00 a 1:00). El 88% de los niños de 5 a 11 años consume azúcar a diario y el 34.1% de los escolares de primaria tiene sobrepeso u obesidad (INS, 2025). Nueve de cada diez cuidadores que revisan los octógonos cambian su decisión de compra. Dato de apoyo: el mercado de untables dulces mueve 13.5 mil toneladas al año, crece 2% anual y se estima en S/ 366 millones para 2027 (Euromonitor, 2025). Frase puente: con ese problema en mente, ¿qué proponemos?" data-next="Conoce la solución">
+<section class="s dark" id="s2" data-sec="El problema" data-next="Conoce la solución">
 <img class="logo" data-img="logoc" alt="NutriCacao">
 <p class="pg"></p>
 <h2 class="rv" style="--i:1;max-width:1500px">Los padres evitan los octógonos, pero el anaquel no les ofrece alternativas</h2>
@@ -188,12 +187,14 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Conoce la solución <i>→</i></button>
 </section>
 
+
+
 <!-- ============================================================
      LÁMINA 05 - EL PRODUCTO   (id s3)
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s3" data-sec="El producto" data-note="Alizon (1:00 a 2:00). NutriCacao es una crema untable de cacao y maní con cushuro, endulzada con estevia. Dos formatos: frasco de vidrio de 200 g a S/ 29.90 (10 porciones de 20 g) y sachet de 50 g con boquilla a S/ 7.90 (2.5 porciones). Composición del frasco: 40% pasta de maní, 34.98% maltodextrina, 10% leche descremada, 10% cacao, 4.5% cushuro, 0.5% lecitina y 0.02% estevia. Aporte por porción de 20 g (ficha técnica, hoja 9.11): 0.8 mg de hierro y 2.66 g de proteína. Equivalencias con tablas del INS: una cucharada aporta el hierro de unos 47 g de lentejas cocidas, 28 g de garbanzos, 30 g de espinaca cocida o 67 g de huevo; y la proteína de 42 g de lentejas, 30 g de garbanzos o 21 g de huevo. Es un aporte complementario, no previene ni combate la anemia. Valores por confirmar con análisis de laboratorio. Una nutricionista advirtió que el cacao puede reducir la absorción del hierro no hemínico: combinar con vitamina C. Mensaje madre: El mismo sabor de siempre, con la fuerza nutritiva que le faltaba." data-next="Mira el mercado">
+<section class="s" id="s3" data-sec="El producto" data-next="Mira el mercado">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">El mismo sabor de siempre, con <span class="hl">hierro y proteína</span></h2>
 <div class="row" style="margin-top:20px;gap:44px;align-items:stretch;height:700px">
@@ -224,17 +225,17 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s dark" id="s5" data-sec="El mercado" data-note="Merly (2:00 a 3:15). Investigación de enfoque mixto: 5 expertos, 10 padres, focus groups con degustación, observación en góndola y 598 respuestas de encuesta, 406 válidas (mínimo 385; error muestral 4.9%). El 98.3% compró untables dulces en los últimos tres meses; se consumen en el desayuno (88.9%) y la lonchera (52.0%). Embudo: 2,645,900 hogares de Lima Metropolitana, 47.7% NSE A, B y C1, 30.9% con hijos de 3 a 12 años, 61.7% compra untables dulces: 240,300 hogares. Captación: 22.5% frasco y 18.6% sachet. La demanda se ajusta por sesgo de intención de compra, apertura por zonas y cobertura de canales. Reconocer que la encuesta fue en línea y sin muestreo probabilístico. Aclarar antes cuántos focus groups se hicieron (resumen: 4; Tabla 3: 2)." data-next="Mira a la competencia">
+<section class="s dark" id="s5" data-sec="El mercado" data-next="Mira a la competencia">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px;max-width:1500px">Mercado objetivo: 240,300 hogares que compran untables dulces</h2>
 <div class="row" style="margin-top:30px;gap:60px">
 <div class="col f1" style="gap:14px" id="funnel"></div>
 <div class="col" style="width:560px;gap:18px">
-<div class="card rv" style="--i:6;padding:20px 34px"><p class="eyebrow" style="margin:0 0 4px">Frasco 200 g</p><p class="big" style="font-size:64px" data-count="54129" data-sep="1">0</p><p style="font-size:26px">hogares captados (22.5%)</p><p style="font-size:18px;color:#CDB59C;margin-top:6px">Fuente: árbol de demanda con base en encuesta propia (n = 406)</p></div>
-<div class="card rv" style="--i:7;padding:20px 34px"><p class="eyebrow" style="margin:0 0 4px">Sachet 50 g</p><p class="big" style="font-size:64px" data-count="44637" data-sep="1">0</p><p style="font-size:26px">hogares captados (18.6%)</p><p style="font-size:18px;color:#CDB59C;margin-top:6px">Fuente: árbol de demanda con base en encuesta propia (n = 406)</p></div>
+<div class="card rv" style="--i:6;padding:20px 34px"><p class="eyebrow" style="margin:0 0 4px">Frasco 200 g</p><p class="big" style="font-size:64px" data-count="54129" data-sep="1">0</p><p style="font-size:26px">hogares captados (22.5%)</p></div>
+<div class="card rv" style="--i:7;padding:20px 34px"><p class="eyebrow" style="margin:0 0 4px">Sachet 50 g</p><p class="big" style="font-size:64px" data-count="44637" data-sep="1">0</p><p style="font-size:26px">hogares captados (18.6%)</p></div>
 
 </div></div>
-<p class="src">Encuesta: 406 respuestas válidas (mínimo 385). Fuente: investigación de mercado del proyecto (encuesta en línea) e INEI.</p>
+<p class="src">Fuente: CPI (2026), APEIM (2025), Euromonitor (2025) y encuesta propia (n = 406).</p>
 <button class="next" data-go="1">Mira a la competencia <i>→</i></button>
 </section>
 
@@ -243,9 +244,9 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s6" data-sec="Entorno y estrategia" data-note="Merly (3:15 a 4:15). En el PESTEG pesan más las oportunidades (preocupación por el azúcar infantil, alimentos funcionales, comercio electrónico) que las amenazas (Ley 30021, rivalidad, abastecimiento de cushuro); la matriz EFE da 2.97, sobre el promedio de 2.5. Porter muestra alta rivalidad y sustitutos: estrategia de enfoque en diferenciación. El mapa de grupos estratégicos muestra que ningún competidor ofrece una crema de cacao sin octógonos con un nutriente funcional. VRIO: la ventaja sostenible es la fórmula propia y el sabor. Honestidad ante preguntas: la barrera de imitación vía maquila es baja. Posiciones del mapa: estimación del equipo por observación en góndola." data-next="Mira el marketing">
+<section class="s" id="s6" data-sec="Entorno y estrategia" data-next="Mira el marketing">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<h2 class="rv" style="--i:1;font-size:56px;max-width:1560px">Análisis del entorno: un mercado de alta rivalidad que exige una estrategia de diferenciación</h2>
+<h2 class="rv" style="--i:1;font-size:56px;max-width:1560px">Entorno: alta rivalidad, estrategia de diferenciación</h2>
 <div class="row" style="margin-top:26px;gap:50px">
 <div class="rv z" style="--i:2;position:relative;width:960px;height:640px;flex:none;background:var(--paper);border:3px solid var(--line);border-radius:32px" id="map">
 <div class="axis" style="left:0;top:0;width:4px;height:600px;right:auto;background:var(--cacao)"></div><div class="axis" style="top:600px"></div>
@@ -253,9 +254,9 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <p style="position:absolute;right:24px;top:606px;font-size:23px;color:var(--muted)">Mayor precio por 100 g →</p>
 </div>
 <div class="col f1" style="gap:18px;justify-content:center">
-<div class="card rv" style="--i:4;border-left:14px solid var(--orange);padding:18px 26px"><h3 style="font-size:27px;margin:0">Matriz EFE: <span class="hl"><b data-count="2.97" data-dec="2">0</b></span> (sobre 2.5)</h3><p style="font-size:22px;margin-top:6px">Las oportunidades de mayor peso son la preocupación de los padres por el azúcar (0.60) y que ningún competidor ofrece un ingrediente funcional nutritivo (0.60). El principal reto es la alta rivalidad de marcas establecidas, que enfrentamos con diferenciación.</p></div>
-<div class="card rv" style="--i:5;border-left:14px solid var(--orange);padding:18px 26px"><h3 style="font-size:27px;margin:0">Cinco fuerzas de Porter</h3><p style="font-size:22px;margin-top:6px">El poder de los clientes, la amenaza de sustitutos y la rivalidad son altos. Competir por precio frente a marcas establecidas no es viable, así que optamos por el enfoque en diferenciación.</p></div>
-<div class="card rv" style="--i:6;border-left:14px solid var(--lime);padding:18px 26px"><h3 style="font-size:27px;margin:0">VRIO</h3><p style="font-size:22px;margin-top:6px">Nuestra fórmula funcional y nutritiva con cushuro y un sabor comparable a los untables tradicionales son una ventaja competitiva sostenible. El respaldo de nutricionistas y la relación con el maquilador son ventajas temporales.</p></div>
+<div class="card rv" style="--i:4;border-left:14px solid var(--orange);padding:18px 26px"><h3 style="font-size:27px;margin:0">Matriz EFE: <span class="hl"><b data-count="2.97" data-dec="2">0</b></span> (sobre 2.5)</h3><p style="font-size:27px;margin-top:6px">Las oportunidades pesan más que las amenazas.</p></div>
+<div class="card rv" style="--i:5;border-left:14px solid var(--orange);padding:18px 26px"><h3 style="font-size:27px;margin:0">Cinco fuerzas de Porter</h3><p style="font-size:27px;margin-top:6px">Clientes, sustitutos y rivalidad altos: no competimos por precio.</p></div>
+<div class="card rv" style="--i:6;border-left:14px solid var(--lime);padding:18px 26px"><h3 style="font-size:27px;margin:0">VRIO</h3><p style="font-size:27px;margin-top:6px">Ventaja sostenible: fórmula con cushuro y sabor. Temporal: nutricionistas y maquilador.</p></div>
 </div></div>
 <p class="src">Posiciones del mapa: estimación del equipo por observación en góndola. Fuente: PESTEG, EFE, Porter y VRIO del trabajo.</p>
 <button class="next" data-go="1">Mira el marketing <i>→</i></button>
@@ -266,23 +267,22 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s7" data-sec="Marketing - Estrategia" data-note="Nayeli (4:15 a 5:30). Posicionamiento: Para padres que cuidan lo que comen sus hijos, NutriCacao es la crema de cacao y maní sin octógonos que aporta hierro y proteína. Lógica: probar antes que convencer, porque el sabor decide la recompra y el consumidor asocia lo saludable con mal sabor; por eso la mayor inversión de 2027 y 2028 va a degustaciones y a la voz de especialistas e influencers, no a descuentos. Cada canal tiene un rol, un mensaje y una táctica (Tabla 18). Márgenes brutos del frasco: supermercados 38.2%, tiendas especializadas 52.1%, venta directa 64.1%. Precio S/ 29.90: 44.3% de los encuestados paga entre S/ 20 y S/ 29.90. La Ley 30021 obliga a comunicar a los padres, no a los niños." data-next="Mira cuánto invertimos">
+<section class="s" id="s7" data-sec="Marketing - Estrategia" data-next="Mira cuánto invertimos">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
-<h2 class="rv" style="--i:1;font-size:56px;max-width:1560px">Estrategia de marketing: degustar para vencer el prejuicio de lo saludable</h2>
+<h2 class="rv" style="--i:1;font-size:56px;max-width:1560px">Marketing: probar antes que convencer</h2>
 <div class="row" style="margin-top:24px;gap:44px;align-items:stretch;height:680px">
 <div class="col" style="width:820px;flex:none;gap:16px">
-<div class="bubble rv" style="--i:2;font:800 27px/1.3 var(--ff-h);padding:18px 30px">Para padres que cuidan lo que comen sus hijos, NutriCacao es la crema de cacao y maní sin octógonos que aporta hierro y proteína.</div>
+<div class="bubble rv" style="--i:2;font:800 27px/1.3 var(--ff-h);padding:18px 30px">NutriCacao: la crema de cacao sin octógonos, con hierro y proteína.</div>
 <p class="rv" style="--i:3;font-size:25px;font-weight:700;color:var(--ink)">Cada canal tiene su papel. Elige uno:</p>
 <div class="tabs rv" style="--i:3;flex-wrap:nowrap;gap:10px"><button class="tab on" style="font-size:19px;padding:10px 16px" data-ch="0">Wong y Vivanda</button><button class="tab" style="font-size:19px;padding:10px 16px" data-ch="1">Plaza Vea y Metro</button><button class="tab" style="font-size:19px;padding:10px 16px" data-ch="2">Flora &amp; Fauna y Organa</button><button class="tab" style="font-size:19px;padding:10px 16px" data-ch="3">Venta directa</button></div>
 <div class="card rv col" style="--i:4;flex:1;min-height:0;padding:20px 32px;justify-content:space-between"><p class="eyebrow" id="chrole" style="font-size:21px"></p>
 <div class="row" style="align-items:baseline;gap:18px"><p class="big" style="font-size:72px" id="chm">38.2%</p><p style="font-size:25px">margen bruto del frasco</p></div>
-<p style="font-size:24px"><b>Perfil:</b> <span id="chp"></span></p>
 <p style="font-size:24px"><b>Mensaje:</b> <i id="chq"></i></p>
 <p style="font-size:24px"><b>Táctica:</b> <span id="cht"></span></p></div>
 </div>
 <div class="col f1" style="gap:16px;min-width:0">
 <div class="rv z" style="--i:3;position:relative;flex:none;aspect-ratio:1318/736;border-radius:36px;overflow:hidden;background:#F3F3F5;box-shadow:0 30px 60px rgba(58,28,16,.3)"><img data-img="banner" alt="Campaña NutriCacao: nutrición que se disfruta" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
-<div class="card rv f1 col" style="--i:5;padding:18px 28px;justify-content:center;border-left:14px solid var(--lime)"><p class="eyebrow" style="font-size:20px;margin:0 0 4px">Cómo se prueba</p><p style="font-size:25px">Degustaciones con impulsadora: una por tienda cada 2 meses en el primer semestre de 2027 y cada 4 meses después. La mayor inversión va a degustar, no a descontar.</p></div>
+<div class="card rv f1 col" style="--i:5;padding:18px 28px;justify-content:center;border-left:14px solid var(--lime)"><p class="eyebrow" style="font-size:20px;margin:0 0 4px">Cómo se prueba</p><p style="font-size:25px">Degustaciones con impulsadora en cada tienda: la mayor inversión va a probar, no a descontar.</p></div>
 </div>
 <button class="next" data-go="1">Mira cuánto invertimos <i>→</i></button>
 </section>
@@ -292,7 +292,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s19" data-sec="Marketing - Inversión" data-note="Nayeli. Inversión total de marketing (Tabla 19, sin IGV): S/ 374,581 en 2027 (28.0% de las ventas netas), S/ 322,170 en 2028 (12.1%), S/ 287,281 en 2029 (8.1%), S/ 342,956 en 2030 (8.1%) y S/ 371,273 en 2031 (8.0%). Dos fases: 2027 y 2028, plan intensivo con la agencia La Burbuja; desde 2029 el equipo interno gestiona 8% de las ventas. Los S/ 16,949 de diagnóstico, estrategia, identidad visual y fotografía de prelanzamiento se registran como gastos preoperativos en noviembre y diciembre de 2026. Total de cinco años: unos S/ 1.70 M, cerca de 10.4% de las ventas acumuladas (cálculo propio con las tablas del trabajo)." data-next="Mira qué incluye">
+<section class="s" id="s19" data-sec="Marketing - Inversión" data-next="Mira qué incluye">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Cuánto invertimos y qué parte de las ventas es</h2>
 <div class="row" style="margin-top:22px;gap:50px">
@@ -300,10 +300,11 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <div class="rv" style="--i:3;position:relative;height:610px;margin-top:6px" id="mkchart"></div></div>
 <div class="col f1" style="gap:16px;min-width:0">
 <div class="card rv" style="--i:4;padding:22px 30px"><p class="eyebrow" id="mkphase" style="margin-bottom:4px;font-size:21px"></p><p class="big" style="font-size:84px" id="mktot">S/ 374,581</p><p style="font-size:26px" id="mkpct"></p></div>
-<div class="card rv" style="--i:5;padding:20px 30px"><p style="font-size:24px;margin-bottom:10px" id="mkcmp"></p>
+<div class="rv" style="--i:5;position:relative;flex:1;min-height:300px;border-radius:32px;overflow:hidden;box-shadow:0 24px 50px rgba(58,28,16,.3)"><img data-img="kids" alt="Niños con NutriCacao" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%"><div style="position:absolute;left:0;right:0;bottom:0;padding:60px 30px 22px;background:linear-gradient(transparent,rgba(58,28,16,.92));color:#fff;font:800 31px/1.2 var(--ff-h)">Del 28% de las ventas en el lanzamiento al 8% desde 2029</div></div>
+<div style="display:none"><div class="card rv" style="--i:5;padding:20px 30px"><p style="font-size:24px;margin-bottom:10px" id="mkcmp"></p>
 <div style="height:46px;border-radius:23px;background:var(--line);overflow:hidden;position:relative"><div id="mkslice" style="height:100%;width:0;background:var(--orange);border-radius:23px;transition:width 1s cubic-bezier(.2,.8,.2,1)"></div></div>
 <div class="row" style="justify-content:space-between;font-size:20px;color:var(--muted);margin-top:6px"><span>Marketing</span><span id="mkvt"></span></div></div>
-<div class="card rv" style="--i:6;padding:18px 30px;background:var(--sand);border-color:var(--sand)"><p style="font-size:24px"><b>En los 5 años:</b> unos <b class="hl">S/ 1.70 M</b>, cerca de <b class="hl">10.4%</b> de las ventas acumuladas (cálculo propio con las tablas del trabajo).</p></div>
+<div class="card rv" style="--i:6;padding:18px 30px;background:var(--sand);border-color:var(--sand)"><p style="font-size:24px"><b>En los 5 años:</b> unos <b class="hl">S/ 1.70 M</b>, cerca de <b class="hl">10.4%</b> de las ventas acumuladas (cálculo propio con las tablas del trabajo).</p></div></div>
 </div></div>
 <p class="src">Montos sin IGV. Fuente: presupuesto anual de marketing del trabajo (Tabla 19).</p>
 <button class="next" data-go="1">Mira qué incluye <i>→</i></button>
@@ -314,7 +315,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s20" data-sec="Marketing - Qué incluye" data-note="Nayeli. Qué incluye el gasto. 2027: influencers y UGC S/ 96,000; pauta digital S/ 60,000; degustaciones S/ 53,130; redes sociales S/ 46,610; material POP S/ 46,610; lanzamiento con la agencia (desarrollo inicial, producción audiovisual, relaciones públicas y gestión de influencers) S/ 44,492; SEO S/ 13,729; jalavistas y hosting S/ 14,010. Desde 2029, el 8% de las ventas se reparte en pauta 35%, degustaciones 25%, influencers 12%, contenido 12%, trade y POP 10% y fidelización 6%. Degustaciones: una por tienda cada dos meses en el primer semestre de 2027 y cada cuatro después, con impulsadora y espacio a S/ 220 por día." data-next="Mira el plan por año">
+<section class="s" id="s20" data-sec="Marketing - Qué incluye" data-next="Mira el plan por año">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">En qué se va cada sol de marketing</h2>
 <div class="row" style="margin-top:20px;gap:50px;align-items:flex-start">
@@ -333,14 +334,14 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s21" data-sec="Marketing - Plan por año" data-note="Nayeli. Plan por año (Tabla 20): 2027, 67 puntos de venta, zonas 7 (enero) y 6 (julio), objetivo generar prueba y credibilidad; 2028, 85 puntos, zonas 8 y 2, impulsar recompra y rotación; 2029, 99 puntos, zonas 5 y 1; 2030, 118 puntos, zonas 9 y 4; 2031, 121 puntos, zona 3 (toda Lima). Online: la web es el centro porque ahí se capturan ventas y datos; embudo de tres etapas; metas: costo por venta online de S/ 15 o menos por pedido, interacción de 3% o más y recompra a 90 días. Offline: degustaciones como táctica central, POP, jalavistas de S/ 300 por supermercado nuevo y mercaderismo. Participación de mercado: de 0.63% a 2.0% al 2031." data-next="Mira las ventas">
+<section class="s" id="s21" data-sec="Marketing - Plan por año" data-next="Mira las ventas">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Del lanzamiento a toda Lima, año por año</h2>
 <div class="row" style="margin-top:24px;gap:18px" id="ystep"></div>
 <div class="card rv" style="--i:6;margin-top:18px;padding:18px 32px;display:flex;gap:40px"><div style="width:520px;flex:none"><p class="eyebrow" style="font-size:20px;margin-bottom:4px">Zonas nuevas</p><p style="font:800 30px var(--ff-h);color:var(--ink)" id="yz"></p></div><div class="f1"><p class="eyebrow" style="font-size:20px;margin-bottom:4px">Acciones prioritarias</p><p style="font-size:24px" id="ya"></p></div></div>
 <div class="row" style="margin-top:18px;gap:24px">
-<div class="card f1 rv" style="--i:7;padding:18px 30px;border-left:14px solid var(--orange)"><h3 style="font-size:28px">Online: la web es el centro</h3><p style="font-size:23px;margin-top:6px">Ahí se capturan ventas y datos. Contenido de la nutricionista, recetas y suscripción, y pauta de conversión. Metas: Interacción <b>3% o más</b> y recompra a 90 días.</p></div>
-<div class="card f1 rv" style="--i:8;padding:18px 30px;border-left:14px solid var(--lime)"><h3 style="font-size:28px">Offline: probar en tienda</h3><p style="font-size:23px;margin-top:6px">Degustaciones con impulsadora: una por tienda cada 2 meses en el primer semestre de 2027 y cada 4 meses después. Más POP, jalavistas y mercaderismo.</p></div>
+<div class="card f1 rv" style="--i:7;padding:18px 30px;border-left:14px solid var(--orange)"><h3 style="font-size:28px">Online: la web es el centro</h3><p style="font-size:23px;margin-top:6px">Captura ventas y datos. Meta: recompra a 90 días.</p></div>
+<div class="card f1 rv" style="--i:8;padding:18px 30px;border-left:14px solid var(--lime)"><h3 style="font-size:28px">Offline: probar en tienda</h3><p style="font-size:23px;margin-top:6px">Degustación en tienda, POP y mercaderismo.</p></div>
 </div>
 <button class="next" data-go="1">Mira las ventas <i>→</i></button>
 </section>
@@ -350,7 +351,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s dark" id="s8" data-sec="Ventas proyectadas" data-note="Nayeli. Ventas netas de S/ 1,337,433 en 2027 a S/ 4,623,287 en 2031; participación del 0.63% al 2.0% del valor del mercado de untables dulces; de 67 a 121 puntos de venta. Crecimiento calculado sobre las ventas del trabajo. Lanzamiento el 1 de enero de 2027 en la zona 7; nueve zonas de Lima en 2031 (Ansoff: desarrollo de producto y luego penetración por zonas)." data-next="Mira cómo lo producimos">
+<section class="s dark" id="s8" data-sec="Ventas proyectadas" data-next="Mira cómo lo producimos">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1">De S/ 1.34 M a <span class="hl">S/ 4.62 M</span> en cinco años</h2>
 <div class="row" style="margin-top:30px;gap:50px">
@@ -368,7 +369,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s9" data-sec="Operaciones y equipo" data-note="Nayeli (5:30 a 6:45). No hay planta propia: Inkao Perú produce por lotes (mínimo 100 kg, plazo de 15 días hábiles), el producto llega al almacén de Chorrillos y se despacha. Solo producir y envasar lo ejecuta un tercero; NutriCacao controla los otros cinco procesos. Ningún lote se vende sin análisis microbiológico y de composición en laboratorio acreditado. Equipo: 5 personas en 2027 y 10 en 2031, más nutricionista por honorarios; S.A.C. con cuatro socias (25% cada una), Régimen MYPE Tributario. Riesgo: capacidad de Inkao (unos 3,150 kg al mes según su informe) frente al requerimiento del plan (3.4 t en 2029 y 4.3 t en 2031): contrato con capacidad creciente y segundo maquilador en 2028. Revisar la unidad de estas cifras en el trabajo antes de sustentar." data-next="Mira la inversión">
+<section class="s" id="s9" data-sec="Operaciones y equipo" data-next="Mira la inversión">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1">Maquila con control de calidad por lote</h2>
 <div style="position:relative;margin-top:46px">
@@ -394,7 +395,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s10" data-sec="Plan financiero" data-note="Valery (6:45 a 7:45). La inversión inicial es de S/ 48,569 con IGV porque la producción es tercerizada. El financiamiento total es de S/ 680,000 (S/ 380,000 de las socias y S/ 300,000 de préstamo a TEA de 12.5%, 72 meses y 12 de gracia), porque las cadenas pagan a 120 días mientras los proveedores cobran antes; 92.9% es capital de trabajo. 2027 cierra con pérdida de S/ 201,891 (marketing de lanzamiento: 28% de las ventas). Desde 2028 hay utilidad: S/ 264,194; en 2031, S/ 719,936 (15.6%). Año más ajustado: 2028, el flujo de operación (S/ 21,016) no cubre el servicio de deuda (S/ 79,782) y se cubre con caja acumulada. La caja nunca baja de S/ 10,000. Punto de equilibrio (pestaña): S/ 1.79 M en 2027 con ventas de S/ 1.34 M, 34% por debajo; S/ 2.06 M en 2028 (283,963 unidades, unas 23,700 al mes) con ventas 22.6% por encima; margen de seguridad de 49.1% en 2029, 54.0% en 2030 y 57.1% en 2031. El margen de contribución es 44% a 45% hasta 2028 y 37% a 38% desde 2029, cuando el marketing pasa a ser el 8% de las ventas. Se cubre con el capital de trabajo aportado." data-next="Mira el VAN y la TIR">
+<section class="s" id="s10" data-sec="Plan financiero" data-next="Mira el VAN y la TIR">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1">Poca inversión, mucho capital de trabajo</h2>
 <div class="row" style="margin-top:30px;gap:28px">
@@ -411,7 +412,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <!-- ============================================================
      LÁMINA 15 - FINANCIAMIENTO Y RENTABILIDAD   (id s26)
      ============================================================ -->
-<section class="s dark" id="s26" data-sec="Financiamiento y rentabilidad" data-note="Valery (7:45 a 8:45). Financiamiento total S/ 680,000: S/ 380,000 de las socias (55.9%) y S/ 300,000 de préstamo (44.1%) a TEA 12.5% (TEM 0.99%), 72 meses con 12 de gracia: en 2027 solo intereses (S/ 35,509) y cuotas desde enero de 2028. Saldo de deuda: 300,000 en 2027, 253,244 en 2028, 200,643 en 2029, 141,467 en 2030 y 74,894 en 2031 (se cancela en 2032). Deuda sobre patrimonio: 3.02 veces en 2027 a 0.29 en 2031. Año más ajustado: 2028, flujo de operación S/ 21,016 frente a servicio de deuda S/ 79,782, cubierto con caja acumulada. WACC 11.68%: costo del patrimonio 13.94% (CAPM + riesgo país + prima por tamaño) con 55.88% de peso y costo de deuda después de impuestos 8.81% con 44.12%. VAN S/ 576,633; TIR 43.1%; con tasa exigente de 20% el VAN es S/ 332,325. Recuperación en el cuarto año (2030). Sin valor terminal. Sensibilidad interactiva en anexos." data-next="El porqué de NutriCacao">
+<section class="s dark" id="s26" data-sec="Financiamiento y rentabilidad" data-next="El porqué de NutriCacao">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:62px">Cómo se financia y cuánto rinde</h2>
 <div class="row" style="margin-top:26px;gap:44px">
@@ -439,7 +440,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <!-- ============================================================
      LÁMINA 16 - EL PORQUÉ (cierre emotivo)   (id s35)
      ============================================================ -->
-<section class="s dark" id="s35" style="padding:0" data-sec="El porqué" data-note="Alizon (9:00 a 10:00). CIERRE EMOTIVO, hablar despacio y mirar al jurado, sin leer la lámina. Guion sugerido: Todo esto empezó en una mesa de desayuno. En una mamá que mira el frasco de su hijo y se pregunta si puede darle algo rico sin que le cueste su hierro ni lleve un octógono. Y en un niño que no quiere un producto nutritivo, quiere algo que le guste. Durante meses escuchamos a padres, nutricionistas y niños, y entendimos que nadie debería tener que elegir entre lo que sus hijos aman y lo que necesitan. Hoy les mostramos un negocio viable: VAN de S/ 576,633, TIR de 43.1%, 240,300 hogares y una inversión inicial de solo S/ 48,569. Con riesgos que conocemos y sabemos manejar: ventas, regulación y un solo maquilador. Pero lo que más nos importa no está en el Excel: es que miles de niños empiecen el día con algo que les dé fuerza. Somos cuatro estudiantes que creemos que lo nutritivo y lo rico pueden ir juntos. Gracias por darnos la oportunidad de demostrarlo. Riesgos y conclusiones detalladas están en anexos." data-next="Gracias">
+<section class="s dark" id="s35" style="padding:0" data-sec="El porqué" data-next="Gracias">
 <img data-img="kitchen" alt="Cocina familiar" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%" class="kb">
 <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(58,28,16,.95) 0 52%,rgba(58,28,16,.45) 82%,rgba(58,28,16,.15))"></div>
 <img class="logo" data-img="logoc" alt="NutriCacao" style="height:70px"><p class="pg"></p>
@@ -453,7 +454,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Gracias <i>→</i></button>
 </section>
 
-<section class="s dark" id="s14" style="padding:0" data-sec="Cierre" data-note="Gracias a las familias, al asesor y al jurado. Dejar esta lámina proyectada durante las preguntas del jurado. Responder con la cifra primero y luego el porqué; apoyarse entre compañeras cuando la pregunta sea de otra área y recibir los comentarios con apertura. Los anexos (estados financieros, sensibilidad, WACC, flujo de caja, deuda y modelo Canvas) están a un clic." data-next="Ver anexos">
+<section class="s dark" id="s14" style="padding:0" data-sec="Cierre" data-next="Ver anexos">
 <img data-img="family" alt="Familia desayunando con NutriCacao" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%" class="kb">
 <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(58,28,16,.94) 0 46%,rgba(58,28,16,.35) 80%,rgba(58,28,16,.1))"></div>
 <img class="logo" data-img="logoc" alt="NutriCacao" style="height:70px">
@@ -473,7 +474,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s15" data-sec="Anexo - Finanzas" data-note="Respaldo: Tablas 40, 42 y 44 del trabajo, redondeadas a miles de soles. El FCL acumulado incluye el periodo 0 (2026) de S/ -49 mil. La caja nunca baja del mínimo de S/ 10,000; la más baja es S/ 17,329 en abril de 2028. Punto de equilibrio: S/ 1.79 M en 2027 y S/ 2.06 M en 2028." data-next="Anexo: sensibilidad">
+<section class="s" id="s15" data-sec="Anexo - Finanzas" data-next="Anexo: sensibilidad">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:62px">Estados financieros proyectados (S/ miles)</h2>
 <table class="rv" style="--i:2;margin-top:30px"><tr><th>Concepto</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr>
@@ -494,7 +495,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s dark" id="s11" data-sec="Anexo - Sensibilidad" data-note="Valery (7:45 a 8:45). WACC de 11.68% por CAPM (costo del patrimonio 13.94%, costo de la deuda después de impuestos 8.81%, 44.12% de deuda). VAN de S/ 576,633 y TIR de 43.1%; con tasa exigente de 20% el VAN sigue positivo (S/ 332,325). El FCL acumulado es positivo en 2030, cuarto año. Sin valor terminal. Sensibilidad: las ventas son la variable crítica. Con 5% menos de crecimiento anual el VAN es S/ 329,264; con 10% menos, S/ 84,742 (TIR 17.5%); con 15% menos es negativo (S/ -145,825). Por eso se vigilan cada mes la rotación en tienda y la apertura de zonas. Con financiamiento 100% de las socias el VAN sigue positivo (S/ 535,419). Mover el control cambia el escenario en vivo." data-next="Anexo: WACC y financiamiento">
+<section class="s dark" id="s11" data-sec="Anexo - Sensibilidad" data-next="Anexo: WACC y financiamiento">
 <img class="logo" data-img="logoc" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1">Prueba tú mismo cuánto aguanta el negocio</h2>
 <div class="row" style="margin-top:34px;gap:56px">
@@ -520,7 +521,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: WACC y financiamiento <i>→</i></button>
 </section>
 
-<section class="s" id="s27" data-sec="Anexo - WACC y financiamiento" data-note="Respaldo: Tablas 43, 47 y 48 (hojas 10.2, 10.12 y 10.13). Ke = rf + beta apalancada x prima de mercado + riesgo país + prima por tamaño. Beta apalancada = 0.46 x [1 + (1 - 0.295) x 0.79] = 0.72. A más deuda baja el WACC por el escudo fiscal, pero la TIR no cambia. El VAN sigue positivo con WACC de 17.68% y con financiamiento 100% de las socias (S/ 535,419). La deuda exige cumplir cuotas desde 2028." data-next="Anexo: flujo de caja libre">
+<section class="s" id="s27" data-sec="Anexo - WACC y financiamiento" data-next="Anexo: flujo de caja libre">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px">Costo de capital y estructura de financiamiento</h2>
 <div style="margin-top:22px"><div class="row" style="gap:40px;align-items:flex-start"><div class="f1"><table class="rv tt" style="--i:2;font-size:22px"><tr><th>Componente</th><th>Valor</th></tr><tr><td>Tasa libre de riesgo (bono EE. UU. 10 años)</td><td>4.86%</td></tr><tr><td>Beta desapalancada (alimentos)</td><td>0.46</td></tr><tr><td>Prima de riesgo de mercado</td><td>4.23%</td></tr><tr><td>Riesgo país Perú (EMBIG)</td><td>1.22%</td></tr><tr><td>Prima por tamaño (empresa pequeña)</td><td>4.83%</td></tr><tr><td>Beta apalancada</td><td>0.72</td></tr><tr><td>Costo del patrimonio (Ke)</td><td>13.94%</td></tr><tr><td>Costo de la deuda (Kd) / después de impuestos</td><td>12.50% / 8.81%</td></tr><tr><td>Peso deuda / patrimonio</td><td>44.12% / 55.88%</td></tr><tr><td><b>WACC</b></td><td><b>11.68%</b></td></tr></table></div><div class="f1"><table class="rv tt" style="--i:2;font-size:22px"><tr><th>Préstamo (S/)</th><th>Aporte (S/)</th><th>WACC</th><th>VAN (S/)</th></tr><tr><td>0</td><td>680,000</td><td>12.86%</td><td>535,419</td></tr><tr><td>150,000</td><td>530,000</td><td>12.27%</td><td>555,710</td></tr><tr><td>300,000</td><td>380,000</td><td>11.68%</td><td>576,633</td></tr><tr><td>450,000</td><td>230,000</td><td>11.09%</td><td>598,210</td></tr><tr><td>500,000</td><td>180,000</td><td>10.89%</td><td>605,551</td></tr></table><div style="height:22px"></div><table class="rv tt" style="--i:2;font-size:20px"><tr><th>WACC</th><th>7.68%</th><th>11.68%</th><th>14.68%</th><th>17.68%</th><th>20%</th></tr><tr><td>VAN (S/)</td><td>737,194</td><td>576,633</td><td>476,466</td><td>390,533</td><td>332,325</td></tr></table></div></div></div>
@@ -528,7 +529,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: flujo de caja libre <i>→</i></button>
 </section>
 
-<section class="s" id="s28" data-sec="Anexo - Flujo de caja libre" data-note="Respaldo: Tabla 44 (hoja 10.2). El periodo 0 es el 31 de octubre de 2026 y cada año operativo se ubica al 31 de diciembre; el descuento usa los días reales. No hay valor terminal: el VAN considera solo cinco años de operación. VAN S/ 576,633 al WACC de 11.68%; TIR 43.1%; valor de la empresa al 31/10/2026 S/ 625,202. El FCL acumulado se vuelve positivo en 2030." data-next="Anexo: deuda y ratios">
+<section class="s" id="s28" data-sec="Anexo - Flujo de caja libre" data-next="Anexo: deuda y ratios">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px">Flujo de caja libre, VAN y TIR (S/)</h2>
 <div style="margin-top:22px"><table class="rv tt" style="--i:2;font-size:24px"><tr><th>Concepto</th><th>2026</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr><tr><td>Utilidad operativa (EBIT)</td><td class="neg">-22,474</td><td class="neg">-166,382</td><td>304,143</td><td>670,823</td><td>876,306</td><td>1,008,465</td></tr><tr><td>(–) Impuesto sobre el EBIT</td><td>–</td><td>–</td><td class="neg">-89,722</td><td class="neg">-197,893</td><td class="neg">-258,510</td><td class="neg">-297,497</td></tr><tr><td>NOPAT</td><td class="neg">-22,474</td><td class="neg">-166,382</td><td>214,421</td><td>472,930</td><td>617,796</td><td>710,968</td></tr><tr><td>(+) Depreciación y amortización</td><td>–</td><td>3,062</td><td>3,818</td><td>4,070</td><td>4,070</td><td>2,558</td></tr><tr><td>(–) Inversiones</td><td class="neg">-19,573</td><td>–</td><td class="neg">-3,025</td><td class="neg">-1,008</td><td>–</td><td>–</td></tr><tr><td>(–) Variación del capital de trabajo</td><td class="neg">-6,522</td><td class="neg">-322,558</td><td class="neg">-246,996</td><td class="neg">-41,970</td><td class="neg">-21,205</td><td class="neg">-18,774</td></tr><tr><td><b>Flujo de caja libre</b></td><td><b>-48,569</b></td><td><b>-485,878</b></td><td><b>-31,782</b></td><td><b>434,022</b></td><td><b>600,661</b></td><td><b>694,751</b></td></tr><tr><td>Factor de descuento (WACC 11.68%)</td><td>1.0000</td><td>0.8791</td><td>0.7869</td><td>0.7046</td><td>0.6309</td><td>0.5650</td></tr><tr><td>Valor presente</td><td class="neg">-48,569</td><td class="neg">-427,117</td><td class="neg">-25,010</td><td>305,823</td><td>378,987</td><td>392,518</td></tr><tr><td>FCL acumulado</td><td class="neg">-48,569</td><td class="neg">-534,446</td><td class="neg">-566,229</td><td class="neg">-132,207</td><td>468,454</td><td>1,163,205</td></tr></table></div>
@@ -536,7 +537,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: deuda y ratios <i>→</i></button>
 </section>
 
-<section class="s" id="s29" data-sec="Anexo - Deuda y ratios" data-note="Respaldo: Tablas 34 y 37 (hojas 10.10 y 10.11). Préstamo de una persona cercana, TEA 12.5% (TEM 0.99%), 72 meses con 12 de gracia; el saldo de S/ 74,894 se cancela en 2032. Año más ajustado: 2028, el flujo de operación (S/ 21,016) no cubre el servicio de deuda (S/ 79,782) y se cubre con la caja acumulada; la caja más baja es S/ 17,329 en abril de 2028, siempre sobre el mínimo de S/ 10,000. El aporte de las socias es el mínimo que mantiene esa caja mínima." data-next="Anexo: flujo de efectivo">
+<section class="s" id="s29" data-sec="Anexo - Deuda y ratios" data-next="Anexo: flujo de efectivo">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px">Cronograma del préstamo y ratios financieros</h2>
 <div style="margin-top:22px"><table class="rv tt" style="--i:2;font-size:22px"><tr><th>Préstamo (S/)</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr><tr><td>Intereses</td><td>35,509</td><td>33,026</td><td>27,182</td><td>20,607</td><td>13,210</td></tr><tr><td>Amortización</td><td>–</td><td>46,756</td><td>52,601</td><td>59,176</td><td>66,573</td></tr><tr><td>Saldo al cierre</td><td>300,000</td><td>253,244</td><td>200,643</td><td>141,467</td><td>74,894</td></tr></table><div style="height:26px"></div><table class="rv tt" style="--i:2;font-size:22px"><tr><th>Ratio</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr><tr><td>Margen bruto</td><td>49.5%</td><td>50.2%</td><td>50.2%</td><td>50.8%</td><td>50.8%</td></tr><tr><td>Margen EBITDA</td><td class="neg">-12.2%</td><td>11.6%</td><td>19.1%</td><td>20.9%</td><td>21.9%</td></tr><tr><td>Margen neto</td><td class="neg">-15.1%</td><td>9.9%</td><td>13.3%</td><td>14.8%</td><td>15.6%</td></tr><tr><td>ROE</td><td class="neg">-129.7%</td><td>62.9%</td><td>52.9%</td><td>41.1%</td><td>32.3%</td></tr><tr><td>Liquidez corriente (veces)</td><td>2.81</td><td>2.94</td><td>3.27</td><td>3.61</td><td>4.38</td></tr><tr><td>Deuda ÷ patrimonio (veces)</td><td>3.02</td><td>1.22</td><td>0.66</td><td>0.45</td><td>0.29</td></tr></table></div>
@@ -544,7 +545,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: flujo de efectivo <i>→</i></button>
 </section>
 
-<section class="s" id="s30" data-sec="Anexo - Flujo de efectivo" data-note="Respaldo: Tabla 42 (método indirecto, hojas 10.1 y 10.9). 2027: el flujo de operación es -S/ 521,387 porque las cuentas por cobrar suben S/ 432,153 (cadenas a 120 días) y el año cierra con pérdida. Positivo desde 2028 y llega a S/ 703,720 en 2031. La caja nunca baja del mínimo de S/ 10,000 y cierra 2031 con S/ 1.64 millones, que permitirían dividendos o expansión fuera de Lima." data-next="Anexo: punto de equilibrio">
+<section class="s" id="s30" data-sec="Anexo - Flujo de efectivo" data-next="Anexo: punto de equilibrio">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px">Estado de flujos de efectivo proyectado (S/)</h2>
 <div style="margin-top:22px"><table class="rv tt" style="--i:2;font-size:24px"><tr><th>Concepto</th><th>2026</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr><tr><td>Utilidad neta</td><td class="neg">-22,474</td><td class="neg">-201,891</td><td>264,194</td><td>471,171</td><td>621,110</td><td>719,936</td></tr><tr><td>(Aumento) de cuentas por cobrar</td><td>–</td><td class="neg">-432,153</td><td class="neg">-284,804</td><td class="neg">-201,226</td><td class="neg">-156,497</td><td class="neg">-69,398</td></tr><tr><td>(Aumento) de inventarios</td><td>–</td><td class="neg">-54,673</td><td class="neg">-20,195</td><td class="neg">-15,925</td><td class="neg">-11,000</td><td>4,669</td></tr><tr><td>Aumento de cuentas por pagar</td><td>–</td><td>161,947</td><td>77,433</td><td>49,416</td><td>42,686</td><td>7,121</td></tr><tr><td><b>Flujo de operación</b></td><td><b>-28,995</b></td><td><b>-521,387</b></td><td><b>21,016</b></td><td><b>433,271</b></td><td><b>603,976</b></td><td><b>703,720</b></td></tr><tr><td>Flujo de inversión</td><td class="neg">-19,573</td><td>–</td><td class="neg">-3,025</td><td class="neg">-1,008</td><td>–</td><td>–</td></tr><tr><td>Flujo de financiamiento</td><td>680,000</td><td>–</td><td class="neg">-46,756</td><td class="neg">-52,601</td><td class="neg">-59,176</td><td class="neg">-66,573</td></tr><tr><td>Variación neta del efectivo</td><td>631,431</td><td class="neg">-521,387</td><td class="neg">-28,765</td><td>379,662</td><td>544,800</td><td>637,147</td></tr><tr><td><b>Efectivo al final</b></td><td><b>631,431</b></td><td><b>110,045</b></td><td><b>81,279</b></td><td><b>460,941</b></td><td><b>1,005,741</b></td><td><b>1,642,888</b></td></tr></table></div>
@@ -552,7 +553,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: punto de equilibrio <i>→</i></button>
 </section>
 
-<section class="s" id="s31" data-sec="Anexo - Punto de equilibrio" data-note="Respaldo: Tabla 39 (hoja 10.5). En 2027 las ventas quedan 34.0% por debajo del equilibrio por el marketing de lanzamiento (28.0% de las ventas) y la planilla sobre un año de apertura gradual. Desde 2028 las ventas superan el equilibrio; el margen de seguridad llega a 57.1% en 2031. El margen de contribución baja de 44% a 37% en 2029 porque desde ese año el marketing es variable (8% de las ventas). Unidades = frascos + sachets, valor de venta promedio S/ 7.26." data-next="Anexo: demanda">
+<section class="s" id="s31" data-sec="Anexo - Punto de equilibrio" data-next="Anexo: demanda">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px">Costos, margen de contribución y punto de equilibrio</h2>
 <div style="margin-top:22px"><table class="rv tt" style="--i:2;font-size:24px"><tr><th>Concepto</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr><tr><td>Ventas netas (S/)</td><td>1,337,433</td><td>2,661,978</td><td>3,535,890</td><td>4,209,321</td><td>4,623,287</td></tr><tr><td>Costos variables totales</td><td>743,351</td><td>1,462,329</td><td>2,224,120</td><td>2,623,869</td><td>2,880,468</td></tr><tr><td>Margen de contribución</td><td>594,083</td><td>1,199,649</td><td>1,311,770</td><td>1,585,452</td><td>1,742,819</td></tr><tr><td>Margen de contribución %</td><td>44.4%</td><td>45.1%</td><td>37.1%</td><td>37.7%</td><td>37.7%</td></tr><tr><td>Costos fijos (incluye D&A e intereses)</td><td>795,974</td><td>928,533</td><td>668,129</td><td>729,753</td><td>747,564</td></tr><tr><td><b>Punto de equilibrio (S/)</b></td><td><b>1,791,942</b></td><td><b>2,060,380</b></td><td><b>1,800,948</b></td><td><b>1,937,469</b></td><td><b>1,983,110</b></td></tr><tr><td>Punto de equilibrio (unidades)</td><td>246,967</td><td>283,963</td><td>248,208</td><td>267,024</td><td>273,314</td></tr><tr><td>Margen de seguridad</td><td class="neg">-34.0%</td><td>22.6%</td><td>49.1%</td><td>54.0%</td><td>57.1%</td></tr></table></div>
@@ -560,7 +561,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: demanda <i>→</i></button>
 </section>
 
-<section class="s" id="s32" data-sec="Anexo - Demanda" data-note="Respaldo: Tablas 4 y 50 (encuesta en línea, 598 respuestas y 406 válidas; error de 4.9%). Embudo: 2,645,900 hogares de Lima Metropolitana x 47.7% NSE A, B y C1 x 30.9% con hijos de 3 a 12 años x 61.7% compran untables = 240,300 hogares. Captación 22.5% frasco y 18.6% sachet. Ajustes para pasar de demanda potencial a ventas: factor de 0.55 sobre la frecuencia declarada (la intención sobreestima la compra), apertura gradual de zonas, 83.2% de compras en canales donde estará NutriCacao, crecimiento de 2% y estacionalidad. Consumo implícito de 2.1 kg por hogar, menor que los 2.4 kg de Euromonitor. Como es un sondeo en línea no probabilístico, se usa con ajustes prudentes." data-next="Anexo: precio por canal">
+<section class="s" id="s32" data-sec="Anexo - Demanda" data-next="Anexo: precio por canal">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px">Cómo se estimó la demanda</h2>
 <div style="margin-top:22px"><div class="row" style="gap:40px;align-items:flex-start"><div class="f1"><table class="rv tt" style="--i:2;font-size:21px"><tr><th>Factor</th><th>Frasco 200 g</th><th>Sachet 50 g</th></tr><tr><td>Compró untables (3 meses)</td><td>98.3%</td><td>98.3%</td></tr><tr><td>Consumiría NutriCacao</td><td>60.1%</td><td>40.9%</td></tr><tr><td>Pagaría el precio propuesto</td><td>45.4%</td><td>55.1%</td></tr><tr><td>Aceptación ponderada de atributos</td><td>83.9%</td><td>83.9%</td></tr><tr><td><b>Captación</b></td><td><b>22.5%</b></td><td><b>18.6%</b></td></tr><tr><td>Hogares compradores (240,300 × captación)</td><td>54,129</td><td>44,637</td></tr><tr><td>Frecuencia de compra (veces al año)</td><td>4.8</td><td>22.0</td></tr><tr><td>Demanda potencial anual (unidades)</td><td>259,341</td><td>1,001,392</td></tr></table></div><div class="f1"><table class="rv tt" style="--i:2;font-size:21px"><tr><th>Encuesta (n = 406)</th><th>Resultado</th></tr><tr><td>Decide qué se compra para sus hijos</td><td>64.4%</td></tr><tr><td>Compró untables dulces</td><td>98.3%</td></tr><tr><td>Paga S/ 20.00–29.90 por envase</td><td>44.3%</td></tr><tr><td>Paga S/ 30.00–39.90 por envase</td><td>28.3%</td></tr><tr><td>Compra en supermercado</td><td>79.3%</td></tr><tr><td>Compra en biomarkets y tiendas saludables</td><td>31.3%</td></tr><tr><td>Consume en desayuno / lonchera</td><td>88.9% / 52.0%</td></tr></table></div></div></div>
@@ -568,7 +569,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: precio por canal <i>→</i></button>
 </section>
 
-<section class="s" id="s33" data-sec="Anexo - Precio por canal" data-note="Respaldo: Tabla 16 (hoja 8.x del modelo). Precio al público con IGV: S/ 29.90 el frasco y S/ 7.90 el sachet en todos los canales. Valor sin IGV S/ 25.34 y S/ 6.69. El margen del canal es 30% en supermercados y 25% en especializadas; el supermercado además cobra rebate de 17% (entrevista a un especialista de canal moderno). Costo variable en 2027: S/ 9.10 por frasco y S/ 2.25 por sachet, con merma de 1.5%; baja desde 2028 por el descuento de Inkao. Margen bruto de 38.2% a 64.1% en el frasco." data-next="Anexo: capacidad de producción">
+<section class="s" id="s33" data-sec="Anexo - Precio por canal" data-next="Anexo: capacidad de producción">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px">Precio, margen del canal e ingreso neto por unidad (S/)</h2>
 <div style="margin-top:22px"><table class="rv tt" style="--i:2;font-size:24px"><tr><th>Concepto</th><th>Super. frasco</th><th>Especial. frasco</th><th>Directa frasco</th><th>Super. sachet</th><th>Especial. sachet</th><th>Directa sachet</th></tr><tr><td>Precio al público con IGV</td><td>29.90</td><td>29.90</td><td>29.90</td><td>7.90</td><td>7.90</td><td>7.90</td></tr><tr><td>Valor de venta sin IGV</td><td>25.34</td><td>25.34</td><td>25.34</td><td>6.69</td><td>6.69</td><td>6.69</td></tr><tr><td>(–) Margen del canal</td><td>30%</td><td>25%</td><td>0%</td><td>30%</td><td>25%</td><td>0%</td></tr><tr><td>(–) Rebate</td><td>17%</td><td>–</td><td>–</td><td>17%</td><td>–</td><td>–</td></tr><tr><td><b>Ingreso neto por unidad</b></td><td><b>14.72</b></td><td><b>19.00</b></td><td><b>25.34</b></td><td><b>3.89</b></td><td><b>5.02</b></td><td><b>6.69</b></td></tr><tr><td>Costo variable por unidad (2027)</td><td>9.10</td><td>9.10</td><td>9.10</td><td>2.25</td><td>2.25</td><td>2.25</td></tr><tr><td>Margen bruto %</td><td>38.2%</td><td>52.1%</td><td>64.1%</td><td>42.2%</td><td>55.2%</td><td>66.4%</td></tr></table></div>
@@ -576,7 +577,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <button class="next" data-go="1">Anexo: capacidad de producción <i>→</i></button>
 </section>
 
-<section class="s" id="s34" data-sec="Anexo - Capacidad de producción" data-note="Respaldo: Tabla 27 y sección 6.4. Inkao indicó una capacidad de unos 3,150 kg al mes para este producto (N. Reynoso, 10 de octubre de 2026), pero el plan requiere 3.4 t al mes en 2029 y 4.3 t en 2031: el contrato debe fijar capacidad comprometida creciente (hasta unas 4.5 t al mes) y se homologará un segundo maquilador durante 2028. Descuento de Inkao: 5% desde 2 t al mes y 10% desde 3.5 t al mes sobre la maquila. Pedido mínimo 100 kg, plazo de 15 días hábiles." data-next="Anexo: riesgos y conclusiones">
+<section class="s" id="s34" data-sec="Anexo - Capacidad de producción" data-next="Anexo: riesgos y conclusiones">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:56px">Plan de producción y costo variable unitario</h2>
 <div style="margin-top:22px"><table class="rv tt" style="--i:2;font-size:24px"><tr><th>Concepto</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr><tr><td>Frascos a producir (incluye merma)</td><td>41,665</td><td>77,840</td><td>102,705</td><td>121,871</td><td>132,792</td></tr><tr><td>Sachets a producir (incluye merma)</td><td>160,879</td><td>300,565</td><td>396,577</td><td>470,580</td><td>512,749</td></tr><tr><td>Producción total (kg)</td><td>16,377</td><td>30,596</td><td>40,370</td><td>47,903</td><td>52,196</td></tr><tr><td>Producción promedio (t/mes)</td><td>1.36</td><td>2.55</td><td>3.36</td><td>3.99</td><td>4.35</td></tr><tr><td>Descuento de Inkao sobre la maquila</td><td>0%</td><td>5%</td><td>5%</td><td>10%</td><td>10%</td></tr><tr><td>Costo variable por frasco producido (S/)</td><td>8.96</td><td>8.85</td><td>8.85</td><td>8.75</td><td>8.75</td></tr><tr><td>Costo variable por sachet producido (S/)</td><td>2.21</td><td>2.19</td><td>2.19</td><td>2.16</td><td>2.16</td></tr></table><p class="rv" style="--i:3;margin-top:22px;font-size:24px"><b>Riesgo de capacidad:</b> Inkao indicó unos 3,150 kg al mes; el plan pide 3.4 t en 2029 y 4.3 t en 2031. Mitigación: capacidad comprometida creciente en el contrato y segundo maquilador en 2028.</p></div>
@@ -589,7 +590,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s13" data-sec="Anexo - Riesgos y conclusiones" data-note="Alizon (9:00 a 10:00). Tres riesgos con mitigación: ventas bajo lo proyectado (la rotación en tienda decide cuándo abrir una zona), Ley 30021 y registro sanitario (análisis del lote final antes de solicitar el registro) y un solo maquilador (contrato con capacidad creciente y segundo maquilador). Tres conclusiones: (1) el problema es real y el sabor decide la recompra; (2) hay mercado suficiente, 240,300 hogares, y una posición diferenciada sin competidor directo; (3) el proyecto es viable, VAN de S/ 576,633 y TIR de 43.1%, pero intensivo en capital de trabajo y sensible al volumen de ventas. Recomendación: validar la fórmula en laboratorio antes del registro sanitario, contratar capacidad creciente con Inkao y abrir zonas solo si la rotación supera lo proyectado. Respaldo para preguntas del jurado." data-next="Anexo: modelo Canvas">
+<section class="s" id="s13" data-sec="Anexo - Riesgos y conclusiones" data-next="Anexo: modelo Canvas">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:64px;white-space:nowrap">Un negocio viable, con riesgos medidos</h2>
 <div class="row" style="margin-top:20px;gap:26px">
@@ -612,7 +613,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s16" data-sec="Anexo - Modelo de negocio" data-note="Respaldo: Tabla 1 del trabajo (modelo de negocio Canvas, elaboración propia con base en Osterwalder y Pigneur, 2010)." data-next="Volver al inicio">
+<section class="s" id="s16" data-sec="Anexo - Modelo de negocio" data-next="Volver al inicio">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:62px">Modelo Canvas</h2>
 <div style="display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(2,1fr);gap:16px;margin-top:22px;height:560px">
@@ -633,7 +634,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s4" data-sec="Anexo - Producto y regulación" data-note="Respaldo: Tablas 23, 24 y 25 del trabajo. Costo de materia prima por frasco: S/ 5.57 (incluye 3% de merma). Octógonos desde 10 g de azúcar total, 4 g de grasa saturada o 400 mg de sodio por 100 g de sólido. Meta de diseño: máximo 8 g de azúcar total y 3.5 g de grasa saturada por 100 g. El análisis fisicoquímico del lote final se hace antes de solicitar el registro sanitario. Alérgenos: maní, leche y soya. Vida útil de 12 meses, por validar." data-next="Anexo: inversión preoperativa">
+<section class="s" id="s4" data-sec="Anexo - Producto y regulación" data-next="Anexo: inversión preoperativa">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:62px;white-space:nowrap">Fórmula del frasco de 200 g y Ley 30021</h2>
 <div class="row" style="margin-top:26px;gap:60px;align-items:flex-start">
@@ -656,7 +657,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s22" data-sec="Anexo - Inversión preoperativa" data-note="Respaldo: hoja 9.7 (actividades e inversión preoperativas) y 10.5 del Excel. Inversión de noviembre y diciembre de 2026 sin IGV: S/ 42,047; con IGV, S/ 48,569; el IGV de S/ 6,522 es crédito fiscal. Los gastos preoperativos suman S/ 22,474: diagnóstico y estrategia de marca S/ 11,017, desarrollo de fórmula y pruebas piloto S/ 3,000, identidad visual S/ 3,390, estrategia de lanzamiento S/ 1,695, registro sanitario y análisis S/ 1,093, fotografía S/ 847, nutricionista S/ 763, constitución S/ 338 y licencia e ITSE S/ 331. Precios de laptops, muebles y equipos: cotizaciones de Sodimac, Falabella y Promart; web y marca: propuesta de La Burbuja. Pregunta probable: por qué la inversión inicial es tan baja. Respuesta: la producción es tercerizada con Inkao, por eso casi todo el financiamiento (92.9%) es capital de trabajo." data-next="Anexo: presupuesto de operaciones">
+<section class="s" id="s22" data-sec="Anexo - Inversión preoperativa" data-next="Anexo: presupuesto de operaciones">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:58px;white-space:nowrap">Antes de vender: S/ 48,569 de inversión inicial</h2>
 <style>table.tb{font-size:22px}table.tb th,table.tb td{padding:7px 14px}table.tb .l{text-align:left}table.tb tr.t td{background:var(--sand);font-weight:800;color:var(--ink)}table.tb tr.sec td{background:transparent;font:800 20px var(--ff-h);letter-spacing:.08em;text-transform:uppercase;color:var(--orange-d);border-bottom:2px solid var(--orange)}</style><div class="row" style="margin-top:22px;gap:44px;align-items:flex-start">
@@ -674,7 +675,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s23" data-sec="Anexo - Operaciones" data-note="Respaldo: hojas 9.4, 9.8 y 9.9 del Excel. Los costos de operaciones pasan de S/ 1.00 M en 2027 a S/ 2.84 M en 2031. Casi todo son compras de producción: las compras a Inkao más cushuro, envases y precinto suman S/ 729 mil en 2027 y S/ 2.27 M en 2031. El costo de operaciones por unidad vendida baja de S/ 5.44 a S/ 4.46 por el descuento de volumen de Inkao y porque el almacén es fijo. El almacén de 77 m² se alquila desde 2027 para no mudarse; las posiciones de pallet salen del pico de inventario de 2031 (37). Fletes por viaje: Transwer, CD Cencosud Huachipa y CD SPSA Punta Negra." data-next="Anexo: gastos administrativos y de ventas">
+<section class="s" id="s23" data-sec="Anexo - Operaciones" data-next="Anexo: gastos administrativos y de ventas">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:58px;white-space:nowrap">Presupuesto de operaciones 2027 a 2031</h2>
 <div class="row" style="margin-top:22px;gap:40px;align-items:flex-start">
@@ -701,7 +702,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s24" data-sec="Anexo - Gastos operativos" data-note="Respaldo: hoja 10.7 del Excel (gastos de administración y de ventas, sin IGV). Los gastos operativos suben de S/ 826 mil en 2027 a S/ 1.34 M en 2031. En 2027 el marketing de lanzamiento es 45% de los gastos operativos (S/ 374,581 de S/ 825,914). La planilla de ventas y marketing salta en 2028 porque entran el gerente comercial, el ejecutivo de trade marketing y la asistente de marketing digital. Supuestos mensuales: contabilidad externa S/ 590 con IGV (JGA Consultores), asesoría legal S/ 800 por recibo por honorarios, plataforma administrativa S/ 650 con IGV, suministros S/ 150 e internet y telefonía S/ 100 por persona remota. Los gastos de personal se detallan en el anexo de recursos humanos." data-next="Anexo: recursos humanos">
+<section class="s" id="s24" data-sec="Anexo - Gastos operativos" data-next="Anexo: recursos humanos">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:58px;white-space:nowrap">Gastos administrativos y de ventas (S/)</h2>
 <table class="tb rv" style="--i:2;margin-top:18px;font-size:21px"><tr><th class="l">S/ sin IGV</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th></tr>
@@ -728,7 +729,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s25" data-sec="Anexo - Recursos humanos" data-note="Respaldo: hojas 12.1 y 12.4 del Excel. El equipo pasa de 6 personas en 2027 a 11 en 2030, con la nutricionista por recibo por honorarios. Total de recursos humanos: S/ 245 mil en 2027 (18.3% de las ventas) y S/ 487 mil en 2031 (10.5%). Beneficios: gratificación de un sueldo al año (la mitad en julio y la mitad en diciembre), bonificación extraordinaria de 9%, CTS de medio sueldo, vacaciones de 15 días y EsSalud de 9%. Los programas de RRHH incluyen reclutamiento, inducción, capacitaciones, exámenes médicos, uniforme y EPP del almacén. Contratación escalonada: en 2028 entran el gerente comercial, el ejecutivo de trade marketing y la asistente de marketing digital; en 2029, la asistente de atención online; en 2030, un segundo auxiliar de almacén." data-next="Anexo: sostenibilidad">
+<section class="s" id="s25" data-sec="Anexo - Recursos humanos" data-next="Anexo: sostenibilidad">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1;font-size:58px;white-space:nowrap">Equipo y costo de personal 2027 a 2031</h2>
 <div class="row" style="margin-top:20px;gap:40px;align-items:flex-start">
@@ -753,7 +754,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
-<section class="s" id="s12" data-sec="Anexo - Sostenibilidad" data-note="Valery (8:45 a 9:30). Sostenible en tres dimensiones. Económica: utilidad desde 2028, VAN positivo, caja mínima protegida y deuda que baja de 3.0 a 0.3 veces el patrimonio. Social: mejor nutrición infantil, valor a un insumo andino y empleo formal con capacitación anual. Ambiental: envase de vidrio, merma controlada de 1.5% y riesgo glaciar sobre las lagunas del cushuro: segundo proveedor. Tres riesgos con mitigación: ventas, Ley 30021 y registro sanitario, y un solo maquilador. Usar solo lo que está en el trabajo; no prometer indicadores ambientales que no se calcularon." data-next="Volver al inicio">
+<section class="s" id="s12" data-sec="Anexo - Sostenibilidad" data-next="Volver al inicio">
 <img class="logo" data-img="logo" alt="NutriCacao"><p class="pg"></p>
 <h2 class="rv" style="--i:1">Sostenible, con los riesgos a la vista</h2>
 <div class="row" style="margin-top:40px;gap:30px">
@@ -772,10 +773,9 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 
 </div></div>
 
-<div id="notes"></div>
 <div class="ctl" role="toolbar" aria-label="Controles de la presentación">
 <button id="bPrev" aria-label="Lámina anterior">←</button><span id="bCnt">1 / 16</span><button id="bNext" aria-label="Lámina siguiente">→</button>
-<button id="bNotes" aria-label="Notas del orador">Notas</button><button id="bTimer" aria-label="Temporizador de 10 minutos">10:00</button><button id="bFs" aria-label="Pantalla completa">⛶</button>
+<button id="bTimer" aria-label="Temporizador de 10 minutos">10:00</button><button id="bFs" aria-label="Pantalla completa">⛶</button>
 </div>
 
 <script>
@@ -799,7 +799,8 @@ const IMG={
  "brand_fundelina": "img/brand_fundelina.png",
  "brand_thebutterfactory": "img/brand_thebutterfactory.png",
  "poster": "img/poster.jpg",
- "video": "img/video.mp4"
+ "video": "img/video.mp4",
+ "kids": "img/kids.jpg"
 };
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const slides=$$('.s'),N=slides.length,ANEX=14;
@@ -822,15 +823,13 @@ $$('.gbar',slides[i]).forEach(b=>{b.style.transition='none';const w=b.style.widt
 {const v=$('#vid');if(slides[i].id==='s18'){try{v.currentTime=0;const pp=v.play();pp&&pp.catch(()=>{})}catch(e){}}else v.pause()}
 count(slides[i]);onEnter[slides[i].id]&&onEnter[slides[i].id]();
 $('#bCnt').textContent=(i+1)+' / '+N;$('#prog').style.width=((i+1)/N*100)+'%';
-$('#notes').innerHTML='<b>'+SEC[i]+'.</b> '+slides[i].dataset.note;
 try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
 $$('[data-go]').forEach(b=>b.onclick=()=>go(cur+ +b.dataset.go));
 $$('[data-go-to]').forEach(b=>b.onclick=()=>go(+b.dataset.goTo));
 $('#bPrev').onclick=()=>go(cur-1);$('#bNext').onclick=()=>go(cur+1);
-$('#bNotes').onclick=()=>$('#notes').classList.toggle('show');
 $('#bFs').onclick=()=>{try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{})}catch(e){}};
 let tsec=600,ti=null;$('#bTimer').onclick=()=>{if(ti){clearInterval(ti);ti=null;tsec=600;$('#bTimer').textContent='10:00';return}ti=setInterval(()=>{tsec--;const a=Math.abs(tsec);$('#bTimer').textContent=(tsec<0?'-':'')+String(Math.floor(a/60)).padStart(2,'0')+':'+String(a%60).padStart(2,'0')},1000)};
-addEventListener('keydown',e=>{if(e.target.matches('input'))return;const k=e.key;if(k==='ArrowRight'||k==='PageDown'||k===' '){e.preventDefault();go(cur+1)}else if(k==='ArrowLeft'||k==='PageUp')go(cur-1);else if(k==='Home')go(0);else if(k==='End')go(N-1);else if(k==='n'||k==='N')$('#bNotes').click();else if(k==='t'||k==='T')$('#bTimer').click();else if(k==='f'||k==='F')$('#bFs').click()});
+addEventListener('keydown',e=>{if(e.target.matches('input'))return;const k=e.key;if(k==='ArrowRight'||k==='PageDown'||k===' '){e.preventDefault();go(cur+1)}else if(k==='ArrowLeft'||k==='PageUp')go(cur-1);else if(k==='Home')go(0);else if(k==='End')go(N-1);else if(k==='t'||k==='T')$('#bTimer').click();else if(k==='f'||k==='F')$('#bFs').click()});
 let tx=null;addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});addEventListener('touchend',e=>{if(tx===null||e.target.closest('input'))return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>70)go(cur+(dx<0?1:-1));tx=null});
 $$('.s').forEach((s,i)=>{const p=$('.pg',s);if(p)p.textContent=String(i+1).padStart(2,'0')+' - '+SEC[i]});
 /* ============================================================
@@ -856,7 +855,8 @@ onEnter.s3=()=>eq(eqk,true);
 /* ============================================================
    LÁMINA 06 - MERCADO (embudo y fuentes): textos y datos editables
    ============================================================ */
-(function(){const D=[['Hogares de Lima Metropolitana',2645900,100,'Fuente: CPI (2026)'],['NSE A, B y C1 (47.7%)',1262094,48,'Fuente: APEIM (2025)'],['Con hijos de 3 a 12 años (30.9%)',389591,30,'Fuente: CPI (2026) y encuesta propia (2026)'],['Compran untables dulces (61.7%)',240300,20,'Estimación propia con base en Euromonitor (2025), CCL (2025) y Manzoni y Bernasconi (2017)']];const f=$('#funnel');D.forEach((d,i)=>{const e=document.createElement('div');e.className='rv';e.style.cssText=`--i:${i+2}`;e.innerHTML=`<div style="font-size:25px;margin-bottom:6px;color:#E2CBB2">${d[0]}</div><div style="height:78px;border-radius:20px;background:rgba(255,255,255,.1);overflow:hidden"><div class="gbar" style="width:${d[2]}%;height:100%;background:${i==3?'var(--orange)':'var(--cacao)'};display:flex;align-items:center;padding-left:26px;font:900 38px var(--ff-h);color:#fff;white-space:nowrap" data-w="${d[2]}%"><span data-count="${d[1]}" data-sep="1">0</span></div></div><div style="font-size:19px;margin-top:6px;color:#CDB59C">${d[3]}</div>`;f.appendChild(e)})})();
+(function(){const D=[['Hogares de Lima Metropolitana',2645900,100],['NSE A, B y C1 (47.7%)',1262094,80],['Con hijos de 3 a 12 años (30.9%)',389591,60],['Compran untables dulces (61.7%)',240300,44]],C=['#8A4B2A','#A5602F','#C27A3A','var(--orange)'],f=$('#funnel');f.style.cssText='align-items:center;justify-content:center;gap:6px';
+D.forEach((d,i)=>{const nx=D[i+1]?D[i+1][2]:d[2]-14,s=((d[2]-nx)/2/d[2]*100).toFixed(1),e=document.createElement('div');e.className='rv';e.style.cssText=`--i:${i+2};width:${d[2]}%`;e.innerHTML=`<div style="height:128px;background:${C[i]};clip-path:polygon(0 0,100% 0,${100-s}% 100%,${s}% 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:0 30px"><span style="font:900 46px var(--ff-h)" data-count="${d[1]}" data-sep="1">0</span><span style="font-size:23px">${d[0]}</span></div>`;f.appendChild(e)})})();
 /* ============================================================
    LÁMINA 07 - ENTORNO (mapa de competidores y logos): textos y datos editables
    ============================================================ */
@@ -871,11 +871,11 @@ const st=document.createElement('style');st.textContent='@keyframes pulse{0%{box
 /* ============================================================
    LÁMINA 08 - MARKETING - ESTRATEGIA (textos por canal): textos y datos editables
    ============================================================ */
-const CH=[['Wong y Vivanda - supermercados','38.2%','Padres NSE A/B que leen etiquetas y prueban novedades.','Sin octógonos. Con hierro y proteína. Con el sabor que ya aman.','Degustación en fin de semana, POP en góndola y jalavistas al ingresar.'],
-['Plaza Vea y Metro - supermercados','38.2%','Familias NSE B y C1 en su compra semanal. El sachet es la puerta de entrada.','Cacao y maní con hierro y proteína en el desayuno de todos los días.','Exhibición destacada del sachet y degustaciones junto a los productos de desayuno.'],
-['Flora & Fauna y Organa - especializadas','52.1%','Madres del segmento saludable, primeras en adoptar. Dan evidencia de rotación.','Desarrollada con nutricionistas, con cushuro de los Andes.','Material informativo de la nutricionista sobre los beneficios del producto.'],
-['Venta directa - web','64.1%','Madres digitales que siguen a especialistas e influencers. Dan datos de recompra.','Pídela hoy y recíbela en casa.','Pauta en Meta y TikTok hacia la web, influencers, SEO y packs.']];
-function chSet(i){$$('[data-ch]').forEach(x=>x.classList.toggle('on',+x.dataset.ch===i));const c=CH[i];$('#chrole').textContent=c[0];$('#chm').textContent=c[1];$('#chp').textContent=c[2];$('#chq').textContent='“'+c[3]+'”';$('#cht').textContent=c[4]}
+const CH=[['Wong y Vivanda','38.2%','','Sin octógonos. Con hierro. Con el sabor que ya aman.','Degustación en fin de semana y POP en góndola.'],
+['Plaza Vea y Metro','38.2%','','Más nutrición en el desayuno de todos los días.','Sachet visible y degustación en la zona de desayuno.'],
+['Flora & Fauna y Organa','52.1%','','Desarrollada con nutricionistas, con cushuro de los Andes.','Fichas de la nutricionista y degustaciones.'],
+['Venta directa','64.1%','','Pídela hoy y recíbela en casa.','Meta y TikTok, influencers y packs.']];
+function chSet(i){$$('[data-ch]').forEach(x=>x.classList.toggle('on',+x.dataset.ch===i));const c=CH[i];$('#chrole').textContent=c[0];$('#chm').textContent=c[1];$('#chq').textContent='“'+c[3]+'”';$('#cht').textContent=c[4]}
 $$('[data-ch]').forEach(b=>b.onclick=()=>chSet(+b.dataset.ch));chSet(0);
 /* ============================================================
    LÁMINA 09 - MARKETING - INVERSIÓN: textos y datos editables
@@ -900,7 +900,7 @@ onEnter.s20=()=>irender(iy);
 /* ============================================================
    LÁMINA 11 - MARKETING - PLAN POR AÑO: textos y datos editables
    ============================================================ */
-const YP=[[2027,67,'Zona 7 (ene) y zona 6 (jul)','Generar prueba y credibilidad','Lanzamiento con La Burbuja (plataformas, producción audiovisual y relaciones públicas); pauta; 4 mamás influencers, 1 perfil de alto alcance y 9 cuentas con 3 especialistas; degustaciones; POP y jalavistas.'],[2028,85,'Zonas 8 y 2','Impulsar recompra y rotación','Redes, POP y SEO con La Burbuja; pauta de conversión; influencers en regreso a clases con el sachet; degustaciones cada 4 meses.'],[2029,99,'Zonas 5 y 1','Expandir cobertura y ocasiones','Equipo interno con 8% de las ventas; campañas por ocasión; degustaciones en tiendas nuevas.'],[2030,118,'Zonas 9 y 4','Aumentar la frecuencia de compra','Packs y promociones por volumen; referidos entre mamás; campañas estacionales.'],[2031,121,'Zona 3 (toda Lima)','Consolidar y preparar extensiones','Fidelización, comunidad digital y lanzamiento de extensión de línea.']];
+const YP=[[2027,67,'Zona 7 (ene) y zona 6 (jul)','Generar prueba y credibilidad','Lanzamiento con La Burbuja, pauta, influencers y degustaciones.'],[2028,85,'Zonas 8 y 2','Impulsar recompra y rotación','Redes, SEO y pauta; campaña de regreso a clases con el sachet.'],[2029,99,'Zonas 5 y 1','Expandir cobertura y ocasiones','Equipo interno (8% de ventas) y campañas por ocasión.'],[2030,118,'Zonas 9 y 4','Aumentar la frecuencia de compra','Packs, referidos entre mamás y campañas estacionales.'],[2031,121,'Zona 3 (toda Lima)','Consolidar y preparar extensiones','Fidelización, comunidad digital y extensión de línea.']];
 function ysel(i){$$('.ys').forEach((b,k)=>b.classList.toggle('on',k===i));$('#yz').textContent=YP[i][2];$('#ya').textContent=YP[i][4]}
 (function(){const bx=$('#ystep');YP.forEach((y,i)=>{const b=document.createElement('button');b.className='ys rv';b.style.setProperty('--i',i+2);b.innerHTML=`<b>${y[0]}</b><span><strong>${y[1]} puntos de venta</strong></span><span>${y[3]}</span>`;b.onclick=()=>ysel(i);bx.appendChild(b)});ysel(0)})();
 /* barras HTML */
