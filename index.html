@@ -231,9 +231,8 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <div class="row" style="margin-top:30px;gap:60px">
 <div class="col f1" style="gap:14px" id="funnel"></div>
 <div class="col" style="width:560px;gap:18px">
-<div class="card rv" style="--i:6;padding:20px 34px"><p class="eyebrow" style="margin:0 0 4px">Frasco 200 g</p><p class="big" style="font-size:64px" data-count="54129" data-sep="1">0</p><p style="font-size:26px">hogares captados (22.5%)</p></div>
-<div class="card rv" style="--i:7;padding:20px 34px"><p class="eyebrow" style="margin:0 0 4px">Sachet 50 g</p><p class="big" style="font-size:64px" data-count="44637" data-sep="1">0</p><p style="font-size:26px">hogares captados (18.6%)</p></div>
-<p class="rv" style="--i:8;font-size:20px;color:#CDB59C">Fuente: árbol de demanda con base en encuesta propia (n = 406).</p>
+<div class="card rv" style="--i:6;padding:20px 34px"><p class="eyebrow" style="margin:0 0 4px">Frasco 200 g</p><p class="big" style="font-size:64px" data-count="54129" data-sep="1">0</p><p style="font-size:26px">hogares captados (22.5%)</p><p style="font-size:18px;margin-top:6px;color:#CDB59C">Fuente: árbol de demanda con base en encuesta propia (n = 406).</p></div>
+<div class="card rv" style="--i:7;padding:20px 34px"><p class="eyebrow" style="margin:0 0 4px">Sachet 50 g</p><p class="big" style="font-size:64px" data-count="44637" data-sep="1">0</p><p style="font-size:26px">hogares captados (18.6%)</p><p style="font-size:18px;margin-top:6px;color:#CDB59C">Fuente: árbol de demanda con base en encuesta propia (n = 406).</p></div>
 
 </div></div>
 
@@ -370,7 +369,7 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 </section>
 
 <!-- ============================================================
-     LÁMINA 13 - OPERACIONES   (id s9)
+     LÁMINA 13 - OPERACIONES Y EQUIPO   (id s9)
      Todos los textos de esta lámina están dentro de esta sección.
      Los textos de gráficos y botones están en el bloque de JS con el mismo número de lámina.
      ============================================================ -->
@@ -448,11 +447,13 @@ td{padding:16px 20px;text-align:right;border-bottom:2px solid var(--line);font-v
 <div style="position:absolute;inset:0;background:linear-gradient(90deg,#3A1C10 0 58%,rgba(58,28,16,.5) 62%,rgba(58,28,16,0) 68%)"></div>
 <img class="logo" data-img="logoc" alt="NutriCacao" style="height:70px">
 <div class="col" style="position:absolute;left:120px;top:170px;width:1000px;gap:22px">
+<p class="eyebrow rv">¿Preguntas y comentarios?</p>
 <h1 class="rv" style="--i:1;font-size:84px;line-height:1.05">Gracias por creer en NutriCacao.</h1>
 <p class="rv" style="--i:2;font-size:36px;line-height:1.25;color:var(--cream);font-family:var(--ff-h);font-weight:800">Detrás de cada niño que disfruta lo que come, hay una familia que busca darle lo mejor.</p>
 <p class="rv" style="--i:3;font-size:30px;line-height:1.3;color:#F2D9B8">Ningún padre debería tener que elegir entre lo que a sus hijos les encanta y lo que les hace bien. Por eso nació NutriCacao: para que el sabor de siempre sea una oportunidad para nutrir mejor.</p>
 <p class="rv" style="--i:4;font-size:30px;line-height:1.3;color:var(--cream)">Hoy presentamos un producto. Mañana, queremos transformar muchas más mesas en hogares.</p>
 <div class="row rv" style="--i:5;gap:16px"><span class="pill" style="background:var(--lime);color:#fff;font-size:24px;padding:10px 24px">240,300 hogares</span><span class="pill" style="background:var(--orange);color:#fff;font-size:24px;padding:10px 24px">VAN S/ 576,633</span><span class="pill" style="background:var(--cacao);color:#fff;font-size:24px;padding:10px 24px">TIR 43.1%</span></div>
+<p class="rv" style="--i:6;font-size:21px;line-height:1.35;color:#E2CBB2">Alizon Quizpe Rodriguez - Merly La Torre Raico - Nayeli De La Cruz Llapapasca - Valery Muchari Llacza<br>Asesor: Gustavo Enrique Kanashiro Uechi</p>
 <div class="row rv" style="--i:7;gap:18px"><button class="tab" style="font-size:24px;padding:10px 26px" data-go-to="0">↺ Volver al inicio</button></div>
 </div>
 <button class="next" data-go="1">Ver anexos <i>→</i></button>
@@ -852,8 +853,8 @@ onEnter.s3=()=>eq(eqk,true);
    LÁMINA 06 - MERCADO (embudo y fuentes): textos y datos editables
    ============================================================ */
 (function(){/* TEXTOS DEL EMBUDO: [etiqueta, hogares, ancho %, fuente] */
-const D=[['Hogares de Lima Metropolitana',2645900,100,'Fuente: CPI (2026)'],['NSE A, B y C1 (47.7%)',1262094,89,'NSE A (2.6%), B (18.4%) y C1 (26.7%). Fuente: APEIM (2025)'],['Con hijos de 3 a 12 años (30.9%)',389591,79,'Fuente: CPI (2026) y encuesta propia (2026)'],['Compran untables dulces (61.7%)',240300,70,'Estimación propia con base en Euromonitor (2025), CCL (2025) y Manzoni y Bernasconi (2017)']],C=['#8A4B2A','#A5602F','#C27A3A','var(--orange)'],f=$('#funnel');f.style.cssText='gap:6px';
-D.forEach((d,i)=>{const nx=D[i+1]?D[i+1][2]:d[2]-14,sl=((d[2]-nx)/2/d[2]*100).toFixed(1),e=document.createElement('div');e.className='rv';e.style.cssText=`--i:${i+2};display:flex;align-items:center;gap:26px`;e.innerHTML=`<div style="width:620px;flex:none;display:flex;justify-content:center"><div style="width:${d[2]}%;height:128px;background:${C[i]};clip-path:polygon(0 0,100% 0,${100-sl}% 100%,${sl}% 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:0 20px"><span style="font:900 44px var(--ff-h)" data-count="${d[1]}" data-sep="1">0</span><span style="font-size:21px;line-height:1.15">${d[0]}</span></div></div><p style="flex:1;font-size:20px;line-height:1.25;color:#CDB59C">${d[3]}</p>`;f.appendChild(e)})})();
+const D=[['Hogares de Lima Metropolitana',2645900,100,'Fuente: CPI (2026)'],['NSE A, B y C1 (47.7%)',1262094,84,'NSE A (2.6%), B (18.4%) y C1 (26.7%). Fuente: APEIM (2025)'],['Con hijos de 3 a 12 años (30.9%)',389591,68,'Fuente: CPI (2026) y encuesta propia (2026)'],['Compran untables dulces (61.7%)',240300,60,'Estimación propia con base en Euromonitor (2025), CCL (2025) y Manzoni y Bernasconi (2017)']],C=['#8A4B2A','#A5602F','#C27A3A','var(--orange)'],f=$('#funnel');f.style.cssText='gap:6px;align-items:center';
+D.forEach((d,i)=>{const nx=D[i+1]?D[i+1][2]:d[2]-12,sl=((d[2]-nx)/2/d[2]*100).toFixed(1),e=document.createElement('div');e.className='rv';e.style.cssText=`--i:${i+2};width:${d[2]}%`;e.innerHTML=`<div style="height:${i==3?186:146}px;background:${C[i]};clip-path:polygon(0 0,100% 0,${100-sl}% 100%,${sl}% 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:0 ${i>1?34:60}px ${i==3?34:0}px"><span style="font:900 42px/1.05 var(--ff-h)" data-count="${d[1]}" data-sep="1">0</span><span style="font-size:22px;line-height:1.15">${d[0]}</span><span style="font-size:17px;line-height:1.2;margin-top:4px;color:rgba(255,255,255,.85);${i==3?'max-width:400px;font-size:16px':''}">${d[3]}</span></div>`;f.appendChild(e)})})();
 /* ============================================================
    LÁMINA 07 - ENTORNO (mapa de competidores y logos): textos y datos editables
    ============================================================ */
@@ -880,9 +881,9 @@ $$('[data-ch]').forEach(b=>b.onclick=()=>chSet(+b.dataset.ch));chSet(0);
 const MKY=[2027,2028,2029,2030,2031],MKT=[374581,322170,287281,342956,371273],MKP=[28.0,12.1,8.1,8.1,8.0],MKV=[1.34,2.66,3.54,4.21,4.62];let mki=0;
 (function(){const t=$('#mktabs');MKY.forEach((y,i)=>{const b=document.createElement('button');b.className='tab'+(i?'':' on');b.textContent=y;b.onclick=()=>mk(i);t.appendChild(b)})})();
 function mk(i){mki=i;$$('#mktabs .tab').forEach((b,k)=>b.classList.toggle('on',k===i));$$('#mkchart .bar').forEach((b,k)=>b.style.opacity=k===i?1:.4);
-tween($('#mktot'),MKT[i],v=>'S/ '+fmt(v,0,1));$('#mkpct').textContent=MKP[i].toFixed(1)+'% de las ventas netas de '+MKY[i];$('#mkphase').textContent=i<2?'Plan intensivo con la agencia La Burbuja':'Equipo interno - 8% de las ventas';
-$('#mkcmp').innerHTML='De cada <b>S/ 100</b> que vendemos en '+MKY[i]+', <b class="hl">S/ '+MKP[i].toFixed(1)+'</b> van a marketing.';$('#mkslice').style.width='0';setTimeout(()=>{$('#mkslice').style.width=MKP[i]+'%'},60);$('#mkvt').textContent='Ventas netas '+MKY[i]+': S/ '+MKV[i].toFixed(2)+' M'}
-onEnter.s19=()=>{$('#mktot')._v=0;bars($('#mkchart'),MKT,{h:610,top:100,bot:60,fs:25,lines:2,lab:(v,k)=>'S/ '+Math.round(v/1000)+' mil<br><span style="color:var(--orange-d)">'+MKP[k].toFixed(1)+'%</span>',x:MKY});$$('#mkchart .bar').forEach((b,k)=>{b.style.cursor='pointer';b.onclick=()=>mk(k)});mk(mki)};
+tween($('#mktot'),MKT[i],v=>'S/ '+fmt(v,0,1));$('#mkpct').textContent=Math.round(MKP[i])+'% de las ventas netas de '+MKY[i];$('#mkphase').textContent=i<2?'Plan intensivo con la agencia La Burbuja':'Equipo interno - 8% de las ventas';
+$('#mkcmp').innerHTML='De cada <b>S/ 100</b> que vendemos en '+MKY[i]+', <b class="hl">S/ '+Math.round(MKP[i])+'</b> van a marketing.';$('#mkslice').style.width='0';setTimeout(()=>{$('#mkslice').style.width=MKP[i]+'%'},60);$('#mkvt').textContent='Ventas netas '+MKY[i]+': S/ '+MKV[i].toFixed(2)+' M'}
+onEnter.s19=()=>{$('#mktot')._v=0;bars($('#mkchart'),MKT,{h:610,top:100,bot:60,fs:25,lines:2,lab:(v,k)=>'S/ '+Math.round(v/1000)+' mil<br><span style="color:var(--orange-d)">'+Math.round(MKP[k])+'%</span>',x:MKY});$$('#mkchart .bar').forEach((b,k)=>{b.style.cursor='pointer';b.onclick=()=>mk(k)});mk(mki)};
 /* ============================================================
    LÁMINA 10 - MARKETING - QUÉ INCLUYE: textos y datos editables
    ============================================================ */
